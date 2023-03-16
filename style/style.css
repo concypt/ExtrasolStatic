@@ -4167,7 +4167,10 @@ button.card-report-btn2 {
         font-size: 44px;
         line-height: 62px;
     }
-
+    .form-details {
+        padding-top: 203px;
+        padding-left: 0;
+    }
 
     #menu {
         display: none;
@@ -4650,6 +4653,9 @@ button.card-report-btn2 {
     }
     .carrer-details-img img {
         padding-top: 10px;
+    }
+    .map-content {
+        margin: 25px;
     }
 }
 
