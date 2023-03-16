@@ -1980,7 +1980,7 @@ select {
     text-decoration: none;
 }
 .nav-tabs .first{
-    background-image: url(../img/01.svg);
+    background-image: url(../img/01.png);
     background-repeat: no-repeat;
     background-position-x: 13px;
     height: 75px;
@@ -1989,7 +1989,7 @@ select {
     margin-top: 40px;
   }
   .second{
-    background-image: url(../img/02.svg);
+    background-image: url(../img/02.png);
     background-repeat: no-repeat;
     background-position-x: 13px;
     height: 75px;
@@ -1998,7 +1998,7 @@ select {
     margin-top: 40px;
   }
   .third{
-    background-image: url(../img/03.svg);
+    background-image: url(../img/03.png);
     background-repeat: no-repeat;
     background-position-x: 13px;
     height: 75px;
@@ -2007,7 +2007,7 @@ select {
     margin-top: 40px;
   }
   .fourth{
-    background-image: url(../img/04.svg);
+    background-image: url(../img/04.png);
     background-position-x: 13px;
     background-repeat: no-repeat;
     height: 75px;
@@ -2016,7 +2016,7 @@ select {
     margin-top: 40px;
   }
   .fifth{
-    background-image: url(../img/05.svg);
+    background-image: url(../img/05.png);
     background-repeat: no-repeat;
     height: 75px;
     display: flex;
