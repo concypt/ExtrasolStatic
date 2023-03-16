@@ -794,6 +794,8 @@ nav.navbar.navbar-expand-lg {
 
 .header-img img {
     margin-top: 72px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .company-logo {
@@ -995,7 +997,6 @@ nav.navbar.navbar-expand-lg {
 }
 
 .arrow {
-    padding-left: 172px;
     cursor: pointer;
 }
 
@@ -1103,6 +1104,16 @@ nav.navbar.navbar-expand-lg {
 .phone {
     margin-bottom: -152px;
     margin-left: 33px;
+    width: 100%;
+    max-width: 253px;
+}
+.form-img .img-size-two{
+    width: 100%;
+    max-width: 365px;
+}
+.form-img .img-size-one{
+    width: 100%;
+    max-width: 256px;
 }
 
 .img-text .lapi {
@@ -2587,13 +2598,16 @@ button#btn1 {
     width: 100%;
     max-width: 522px;
     padding-left: 63px;
+    padding-right: 32px;
     padding-top: 63px;
     transition: 0.5s;
+    height: 574px;
 }
 
 .service-content .learn-sec {
     padding-top: 58px;
 }
+
 
 .learn-sec h3 {
     font-weight: 500;
@@ -2614,6 +2628,7 @@ button#btn1 {
     padding-left: 63px;
     padding-top: 63px;
     border-radius: 50px 50px 0px 50px;
+    padding-bottom: 20px;
 }
 
 .p-t {
@@ -2622,6 +2637,8 @@ button#btn1 {
 
 .service-content:hover .learn-sec {
     opacity: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .service-content:hover h1 {
@@ -3268,6 +3285,21 @@ button.card-report-btn1 {
 button.card-report-btn2 {
     margin-top: 133px;
 }
+.audit-img-two{
+    display: none;
+
+}
+.service-content .audit-img-one{
+    width: 100%;
+    max-width: 107px;
+}
+.service-content:hover .audit-img-two {
+    display: block;
+
+}
+.service-content:hover .audit-img-one {
+    display: none;
+}
 
 @media (max-width: 1600px) {
     #menu ul {
@@ -3305,13 +3337,14 @@ button.card-report-btn2 {
     li.nav-item.active {
         margin-left: 0px;
     }
+    .service-content{
+        height: 520px;
+    }
     .service-content:hover {
         width: 100%;
         max-width: 522px;
         background: #19164C;
-        height: 490px;
-        padding-left: 37px;
-        padding-top: 26px;
+        height: 520px;
         border-radius: 50px 50px 0px 50px;
     }
     .service-content h1 {
@@ -3332,7 +3365,7 @@ button.card-report-btn2 {
         max-width: 400px;
     }
     .service-content .learn-sec {
-        padding-top: 41px;
+        padding-top: 59px;
     }
     /*.learn-sec h3 {*/
     /*    font-weight: 500;*/
@@ -3400,6 +3433,11 @@ button.card-report-btn2 {
         margin-left: 0px;
     }
 
+    .service-content{
+        height: 490px;
+        padding-left: 37px;
+        padding-top: 26px;
+    }
     .service-content:hover {
         width: 100%;
         max-width: 522px;
@@ -3422,12 +3460,12 @@ button.card-report-btn2 {
         font-size: 16px;
         line-height: 28px;
         color: #202321;
-        padding-top: 17px;
+        padding-top: 0px;
         width: 100%;
         max-width: 400px;
     }
     .service-content .learn-sec {
-        padding-top: 41px;
+        padding-top: 59px;
     }
     .learn-sec h3 {
         font-weight: 500;
@@ -3444,6 +3482,7 @@ button.card-report-btn2 {
 }
 
 @media (max-width: 1280px) {
+
     .trusted h2 {
         margin-left: 140px;
     }
@@ -3508,13 +3547,16 @@ button.card-report-btn2 {
     .assets {
         padding-top: 43px;
     }
-    .learn-sec .arrow {
-        padding-left: 120px;
-    }
+    /*.learn-sec .arrow {*/
+    /*    padding-left: 120px;*/
+    /*}*/
     .cards-body p {
         font-size: 14px;
         line-height: 25px;
          margin-top: 0px;
+    }
+    .service-content .learn-sec {
+        padding-top: 40px;
     }
 
 }
@@ -3526,12 +3568,22 @@ button.card-report-btn2 {
     #menu ul {
         margin-left: 489px;
     }
-    .learn-sec .arrow {
-        padding-left: 90px;
-    }
+    /*.learn-sec .arrow {*/
+    /*    padding-left: 90px;*/
+    /*}*/
     .wrap {
         width: 100%;
         max-width: 1000px;
+    }
+    .report-form {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .report-section .report-center{
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .career-imgs img {
         width: 100%;
@@ -3874,9 +3926,9 @@ button.card-report-btn2 {
     #menu {
         display: none;
     }
-    .learn-sec .arrow {
-        padding-left: 191px;
-    }
+    /*.learn-sec .arrow {*/
+    /*    padding-left: 191px;*/
+    /*}*/
     .card {
         margin-top: 40px;
     }
@@ -4077,6 +4129,7 @@ button.card-report-btn2 {
     .report-img {
         margin-top: 59px;
         margin-bottom: 66px;
+
     }
 
     .latest-content h3 {
@@ -4126,6 +4179,14 @@ button.card-report-btn2 {
 }
 
 @media (max-width: 787px) {
+    .header-bg button {
+        margin-left: 47px;
+    }
+
+    .google-map iframe {
+        height: 650px;
+    }
+
     .slider-bg {
         padding-top: 145px;
         padding-left: 20px;
@@ -4137,7 +4198,9 @@ button.card-report-btn2 {
         text-align: center;
         background-size: contain;
     }
-
+    .portfolio-btn{
+       display: none;
+    }
     .about-us h5 {
         margin-left: 0px; 
     }
@@ -4356,11 +4419,38 @@ button.card-report-btn2 {
     .map-content {
         margin: 25px;
     }
+    .service-content {
+       margin-right: auto;
+        margin-left: auto;
+        max-width: 445px;
+        width: 100%;
+    }
+    .service-content:hover {
+        max-width: 445px;
+        width: 100%;
+    }
+    .service-bg .p-t {
+        padding-top: 78px;
+    }
+    .service-content h1 {
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .swiper-two {
+        max-width: 615px;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 530px) {
     .swiper-two {
         max-width: 472px;
+    }
+
+    .mySwiper-two .swiper-slide p {
+        font-size: 16px;
     }
     .report-audit h1 {
         padding-top: 97px;
@@ -4498,13 +4588,21 @@ button.card-report-btn2 {
     .plan-audit-card button {
         margin-bottom: 30px;
     }
+    .swiper-two {
+        max-width: 436px;
+    }
 
-      
 }
 
 @media (max-width: 420px) {
     .company-logo {
         height: 181px;
+    }
+
+    .header-bg button {
+        padding: 13px 14px;
+        font-size: 12px;
+        margin-left: 0px;
     }
     .report-audit h1 {
         padding-top: 97px;
@@ -4523,9 +4621,9 @@ button.card-report-btn2 {
     .audit-web-form {
         margin-right: 12px;
     }
-    .learn-sec .arrow {
-        padding-left: 141px;
-    }
+    /*.learn-sec .arrow {*/
+    /*    padding-left: 141px;*/
+    /*}*/
     .report-form input[type=text] {
         max-width: 299px;
     }
