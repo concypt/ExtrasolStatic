@@ -996,6 +996,14 @@ nav.navbar.navbar-expand-lg {
     margin-top: 60px;
 }
 
+.white-bg a:hover {
+    color: #0056B3;
+    text-decoration: none;
+}
+.slider-sec .arrow {
+    padding-left: 172px;
+    cursor: pointer;
+}
 .arrow {
     cursor: pointer;
 }
