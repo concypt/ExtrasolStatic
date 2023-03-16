@@ -9,8 +9,10 @@
     background-color: #19164C;
     min-height: 120px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 11;
 }
-
 body {
     overflow-x: hidden;
 }
@@ -264,7 +266,9 @@ nav.navbar.navbar-expand-lg {
     color: #000;
     opacity: 1;
 }
-
+.nav-link img{
+    cursor: pointer;
+}
 .wave {
     position: absolute;
     top: -3px;
@@ -430,6 +434,9 @@ nav.navbar.navbar-expand-lg {
     padding-top: 105px;
     margin-left: 78px;
 
+}
+.for-index{
+    z-index: 9999;
 }
 .details-last h1{
     font-weight: 600;
@@ -658,372 +665,41 @@ nav.navbar.navbar-expand-lg {
 }
 
 
-.home-menu{
+#menu{
     position: absolute;
-    width: 40%;
-    height: 820px;
+    width: 57%;
+    height: 100vh;
     background: url(../img/menu-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
+    right: -150vh;
     display: flex;
     align-items: center;
-    transition: 0.6s;
+    transition: 1s;
     overflow: hidden;
     font-family: 'Raleway';
-    top: 0px;
-}
-.about-menu{
-    position: absolute;
-    width: 40%;
-    height: 552px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.blog-detail-menu{
-    position: absolute;
-    width: 40%;
-    height: 438px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.blog-menu{
-    position: absolute;
-    width: 40%;
-    height: 551px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.carrer-menu{
-    position: absolute;
-    width: 40%;
-    height: 759px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.carrer-detail-menu{
-    position: absolute;
-    width: 40%;
-    height: 595px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.contact-menu{
-    position: absolute;
-    width: 40%;
-    height: 611px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
+    top: 0;
 }
 
-.proposal-menu{
-    position: absolute;
-    width: 40%;
-    height: 481px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-
-.report-menu{
-    position: absolute;
-    width: 40%;
-    height: 858px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.service-menu{
-    position: absolute;
-    width: 40%;
-    height: 612px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.work-detail-menu {
-    position: absolute;
-    width: 40%;
-    height: 724px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.work-menu {
-    position: absolute;
-    width: 40%;
-    height: 615px;
-    background: url(../img/menu-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    right: -100vh;
-    display: flex;
-    align-items: center;
-    transition: 0.6s;
-    overflow: hidden;
-    font-family: 'Raleway';
-    top: 0px;
-}
-.home-menu ul li a {
+#menu ul li a {
     font-size: 40px;
-    color: #E1DEE5;
+    color: #fff;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
+    transition: 0.5s;
 }
-.home-menu ul li a:hover {
+#menu ul li a:hover {
     color: #FDBC3B;
     border-color: #FDBC3B;
 }
-.home-menu ul h1 {
-    font-size: 60px;
-    color: #E1DEE5;
-}
-.home-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 30px;
-}
-.home-menu ul {
-    margin-left: 380px;
+
+#menu ul {
+    margin-left: 663px;
     text-align: right;
 }
-.home-menu ul li {
+#menu ul li {
     list-style: none;
-}
-
-
-.about-menu ul li a {
-    font-size: 30px;
-    color: #E1DEE5;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
-}
-.about-menu ul h1 {
-    font-size: 60px;
-    color: #E1DEE5;
-    margin-top: 77px;
-}
-.about-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 30px;
-}
-.about-menu ul {
-    margin-left: 380px;
-    text-align: right;
-}
-.about-menu ul li {
-    list-style: none;
-
-}
-
-
-
-
-
-
-.blog-detail-menu ul li a {
-    font-size: 20px;
-    color: #E1DEE5;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
-    margin-top: 20px;
-}
-.blog-detail-menu ul h1 {
-    font-size: 40px;
-    color: #E1DEE5;
-    margin-top: 20px;
-}
-.blog-detail-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 0px;
-}
-.blog-detail-menu ul {
-    margin-left: 520px;
-    text-align: right;
-}
-.blog-detail-menu ul li {
-    list-style: none;
-
-}
-
-
-
-.blog-menu ul li a {
-    font-size: 30px;
-    color: #E1DEE5;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
-    margin-top: 20px;
-}
-.blog-menu ul h1 {
-    font-size: 40px;
-    color: #E1DEE5;
-    margin-top: 20px;
-}
-.blog-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 0px;
-}
-.blog-menu ul {
-    margin-left: 520px;
-    text-align: right;
-}
-.blog-menu ul li {
-    list-style: none;
-
-}
-
-
-
-
-.carrer-menu ul li a {
-    font-size: 40px;
-    color: #E1DEE5;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
-    margin-top: 20px;
-}
-.carrer-menu ul h1 {
-    font-size: 60px;
-    color: #E1DEE5;
-    margin-top: 20px;
-}
-.carrer-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 0px;
-}
-.carrer-menu ul {
-    margin-left: 420px;
-    text-align: right;
-}
-.carrer-menu ul li {
-    list-style: none;
-
-}
-
-
-
-.carrer-detail-menu ul li a {
-    font-size: 31px;
-    color: #E1DEE5;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    transition: 0.4s all ease-in;
-    margin-top: 20px;
-}
-.carrer-detail-menu ul h1 {
-    font-size: 60px;
-    color: #E1DEE5;
-    margin-top: 20px;
-}
-.carrer-detail-menu ul p {
-    color: #E1DEE5;
-    margin-bottom: 0px;
-}
-.carrer-detail-menu ul {
-    margin-left: 420px;
-    text-align: right;
-}
-.carrer-detail-menu ul li {
-    list-style: none;
-
-}
-.proposal-menu ul h1 {
-    font-size: 40px;
-    color: #E1DEE5;
-    margin-top: 69px;
+    margin-top: 13px;
 }
 .tree-sect {
     display: flex;
@@ -1034,10 +710,10 @@ nav.navbar.navbar-expand-lg {
 .close-icon {
     width: 22px;
     position: absolute;
-    top: 45px;
+    top: 52px;
     cursor: pointer;
+    right: 152px;
 }
-
 /*.nav-item .phone-icon-nav{*/
 /*    display: none;*/
 /*}*/
@@ -1050,6 +726,7 @@ nav.navbar.navbar-expand-lg {
 .header {
     background-color: #19164C;
     height: 100%;
+    padding-top: 115px;
 }
 
 .header-bg {
@@ -1085,7 +762,6 @@ nav.navbar.navbar-expand-lg {
     border: none;
     margin-left: 10px;
     position: relative;
-    z-index: 11111;
 }
 
 .header-bg .wave {
@@ -1184,7 +860,6 @@ nav.navbar.navbar-expand-lg {
     margin-top: 40px;
     border: none;
     position: relative;
-    z-index: 1111;
 }
 
 .slider-bg .wave {
@@ -1229,7 +904,27 @@ nav.navbar.navbar-expand-lg {
     margin-left: 60px;
     transition: 0.5s;
 }
-
+.white-bg:hover {
+    background: #19164C;
+    border-radius: 50px 50px 0px;
+}
+.white-bg:hover h2{
+    color: #fff;
+    
+}
+.white-bg:hover p{
+    color: #fff;
+}
+.white-bg:hover h3{
+    color: #fff;
+    
+}
+.white-bg:hover a{
+   text-decoration: none;
+}
+.white-bg a:hover img{
+    margin-left: 10px;
+ }
 .white-bg {
     background: #fff;
     width: 100%;
@@ -1240,27 +935,6 @@ nav.navbar.navbar-expand-lg {
     margin-left: 60px;
     transition: 0.5s;
 }
-
-.white-bg:hover .assets {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.white-bg:hover h2 {
-    margin-top: -40px;
-    transition: 0.5s;
-}
-
-.blue-bg:hover .assets {
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.blue-bg:hover h2 {
-    margin-top: -40px;
-    transition: 0.5s;
-}
-
 .white-bg p {
     margin-left: 23px;
     font-size: 16px;
@@ -1285,7 +959,9 @@ nav.navbar.navbar-expand-lg {
     line-height: 0;
     margin-top: 60px;
 }
-
+.white-bg img{
+    transition: 0.5s;
+}
 .assets {
     margin-left: 23px;
     padding-top: 60px;
@@ -1337,7 +1013,6 @@ nav.navbar.navbar-expand-lg {
     margin-right: 60px;
     margin-bottom: 100px;
     position: relative;
-    z-index: 1111;
 }
 
 .last-button .wave {
@@ -1399,8 +1074,6 @@ nav.navbar.navbar-expand-lg {
     margin-top: 40px;
     border: none;
     position: relative;
-    z-index: 1111;
-
 }
 
 .img-btn-one:hover .wave {
@@ -1420,7 +1093,6 @@ nav.navbar.navbar-expand-lg {
     border: none;
     margin-left: 27px;
     position: relative;
-    z-index: 111111;
 }
 
 .img-btn-two:hover .wave {
@@ -1614,7 +1286,6 @@ input::placeholder {
     border: none;
     margin-right: 255px;
     position: relative;
-    z-index: 1111;
 }
 
 .latest-content .wave {
@@ -2410,7 +2081,7 @@ select {
 }
 .sort {
     background: #FDBC3B;
-    border-radius: 20px;
+    border-radius: 100px;
     font-weight: 500;
     font-size: 20px;
     border: none;
@@ -2422,6 +2093,9 @@ select {
     margin-right: 125px;
     margin-top: 62px;
 }
+.sort:focus {
+    border-radius: 20px;
+}
 .dropdown-menu {
     background-color: #FDBC3B;
     border-radius: 0px 0px 20px 20px;
@@ -2430,6 +2104,17 @@ select {
     margin-top: -17px;
     width: 100%;
     max-width: 169px;
+    z-index: 0;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0;
+    border-left: none;
 }
 .dropdown-menu li{
     text-align: center;
@@ -2444,8 +2129,15 @@ select {
     color: #fff; 
     font-size: 18px;
 }
-.dropdown-menu li:hover{
-    background-color: #19164C;
+.dropdown-menu li:hover a{
+    color: #19164C;
+}
+.dropdown-menu li a:hover{
+    text-decoration: none;
+    color: #19164C;
+}
+button#btn1 {
+    padding: 1px 16px;
 }
 .btnn:hover{
     color: #FDBC3B;
@@ -3579,11 +3271,13 @@ button.card-report-btn2 {
 
 @media (max-width: 1600px) {
     #menu ul {
-        margin-left: 345px;
+        margin-left: 555px;
     }
-
     #menu {
-        width: 50%;
+        width: 62%;
+    }
+    .close-icon {
+        right: 46px;
     }
     li.nav-item {
         margin-left: 0px;
@@ -3663,9 +3357,8 @@ button.card-report-btn2 {
     }
 
     #menu ul {
-        margin-left: 288px;
+        margin-left: 472px;
     }
-
     .nav-icons li.nav-item {
         margin-left: 0px;
     }
@@ -3828,7 +3521,10 @@ button.card-report-btn2 {
 
 @media (max-width: 1080px) {
     #menu {
-        width: 59%;
+        width: 77%;
+    }
+    #menu ul {
+        margin-left: 489px;
     }
     .learn-sec .arrow {
         padding-left: 90px;
@@ -4171,7 +3867,10 @@ button.card-report-btn2 {
         padding-top: 203px;
         padding-left: 0;
     }
-
+    .for-flexi {
+        display: flex;
+        align-items: center;
+    }
     #menu {
         display: none;
     }
@@ -4265,7 +3964,8 @@ button.card-report-btn2 {
     }
 
     .location-icon img {
-        max-width: 16px;
+        max-width: 19px;
+        margin-right: 40px;
     }
 
     .report-form {
@@ -4273,7 +3973,8 @@ button.card-report-btn2 {
     }
 
     .phone-icon img {
-        max-width: 20px;
+        max-width: 25px;
+        margin-right: 40px;
     }
 
     .navbar-brand img {
@@ -4392,9 +4093,7 @@ button.card-report-btn2 {
     }
 
     .nav-bg {
-        background-color: #19164C;
         min-height: 90px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .footer {
@@ -4434,7 +4133,7 @@ button.card-report-btn2 {
         background: url(../img/slider-res-bg.svg);
         background-repeat: no-repeat;
         background-position-y: 80px;
-        padding-right: 20px;
+        padding-right: 0px;
         text-align: center;
         background-size: contain;
     }
@@ -4489,7 +4188,7 @@ button.card-report-btn2 {
 
     .navbar-brand img {
         width: 100%;
-        max-width: 150px;
+        max-width: 200px;
     }
 
     .trusted {
@@ -4810,6 +4509,17 @@ button.card-report-btn2 {
     .report-audit h1 {
         padding-top: 97px;
     }
+    .navbar-brand img {
+        width: 100%;
+        max-width: 169px;
+    }
+    .phone-icon img {
+        margin-right: 12px;
+    }
+    .location-icon img {
+        margin-right: 29px;
+    }
+    
     .audit-web-form {
         margin-right: 12px;
     }
