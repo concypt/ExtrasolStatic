@@ -3544,24 +3544,163 @@ button.card-report-btn1 {
 button.card-report-btn2 {
 	margin-top: 133px;
 }
-
-.audit-img-two {
-	display: none;
+.service-bg-icone1{
+    display: none;
 }
-
-.service-content .audit-img-one {
-	width: 100%;
-	max-width: 107px;
+.service-content .service-icone1 .service-bg-icone1{
+    width: 100%;
+    max-width: 139px;
 }
-
-.service-content:hover .audit-img-two {
-	display: block;
+.service-content:hover .service-bg-icone1 {
+    display: block;
 }
-
-.service-content:hover .audit-img-one {
-	display: none;
+.service-content:hover .service-icone1 {
+    display: none;
 }
+.service-bg-icone2{
+    display: none;
+}
+.service-content .service-icone2 .service-bg-icone2{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone2 {
+    display: block;
+}
+.service-content:hover .service-icone2 {
+    display: none;
+}
+.service-bg-icone3{
+    display: none;
+}
+.service-content .service-icone3 .service-bg-icone3{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone3 {
+    display: block;
+}
+.service-content:hover .service-icone3 {
+    display: none;
+}
+.service-bg-icone4{
+    display: none;
+}
+.service-content .service-icone4 .service-bg-icone4{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone4 {
+    display: block;
+}
+.service-content:hover .service-icone4 {
+    display: none;
+}
+.service-bg-icone5{
+    display: none;
+}
+.service-content .service-icone5 .service-bg-icone5{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone5 {
+    display: block;
+}
+.service-content:hover .service-icone5 {
+    display: none;
+}
+.service-bg-icone6{
+    display: none;
+}
+.service-content .service-icone6 .service-bg-icone6{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone6 {
+    display: block;
+}
+.service-content:hover .service-icone6 {
+    display: none;
+}
+.service-bg-icone7{
+    display: none;
+}
+.service-content .service-icone7 .service-bg-icone7{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone7 {
+    display: block;
+}
+.service-content:hover .service-icone7 {
+    display: none;
+}
+.service-bg-icone8{
+    display: none;
+}
+.service-content .service-icone8 .service-bg-icone8{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone8 {
+    display: block;
+}
+.service-content:hover .service-icone8 {
+    display: none;
+}
+.service-bg-icone9{
+    display: none;
+}
+.service-content .service-icone9 .service-bg-icone9{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone9 {
+    display: block;
+}
+.service-content:hover .service-icone9 {
+    display: none;
+}
+.service-bg-icone10{
+    display: none;
+}
+.service-content .service-icone10 .service-bg-icone10{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone10 {
+    display: block;
+}
+.service-content:hover .service-icone10 {
+    display: none;
+}
+.service-content .service-icone11 .service-bg-icone11{
+    width: 100%;
+    max-width: 139px;
+}
+.service-bg-icone11{
+    display: none;
+}
+.service-content:hover .service-bg-icone11 {
+    display: block;
+}
+.service-content:hover .service-icone11 {
+    display: none;
+}
+.service-bg-icone12{
+    display: none;
+}
+.service-content .service-icone12 .service-bg-icone12{
+    width: 100%;
+    max-width: 139px;
+}
+.service-content:hover .service-bg-icone12 {
+    display: block;
+}
+.service-content:hover .service-icone12 {
+    display: none;
 
+}
 @media (max-width: 1600px) {
 	#menu ul {
 		margin-left: 555px;
@@ -3720,6 +3859,28 @@ button.card-report-btn2 {
 	.proposal-form input[type=email] {
 		margin-left: 0px;
 	}
+    .service-content{
+        height: 560px;
+        padding-left: 37px;
+        padding-top: 26px;
+    }
+    .service-content:hover {
+        width: 100%;
+        max-width: 522px;
+        background: #19164C;
+        height: 560px;
+        padding-left: 37px;
+        padding-top: 26px;
+        border-radius: 50px 50px 0px 50px;
+    }
+    .service-content h1 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 45px;
+        color: #1D1655;
+        padding-top: 34px;
+    }
+
 
 	.proposal-form input[type=text] {
 		margin-left: 0px;
@@ -4228,24 +4389,25 @@ button.card-report-btn2 {
 }
 
 @media (max-width: 991px) {
-	.service-header h1 {
-		font-size: 44px;
-		line-height: 62px;
-	}
 
-	.form-details {
-		padding-top: 203px;
-		padding-left: 0;
-	}
+    .service-header h1 {
+        font-size: 44px;
+        line-height: 62px;
+    }
 
-	.for-flexi {
-		display: flex;
-		align-items: center;
-	}
+    .form-details {
+        padding-top: 203px;
+        padding-left: 0;
+    }
+    .for-flexi {
+        display: flex;
+        align-items: center;
+    }
 
-	#menu {
-		display: none;
-	}
+    #menu {
+        display: none;
+    }
+
     /*.learn-sec .arrow {*/
     /*    padding-left: 191px;*/
     /*}*/
@@ -4509,13 +4671,20 @@ button.card-report-btn2 {
 }
 
 @media (max-width: 787px) {
-	.header-bg button {
-		margin-left: 47px;
-	}
 
-	.google-map iframe {
-		height: 650px;
-	}
+    .header-bg button {
+        margin-left: 47px;
+    }
+    .service-content:hover {
+        height: 490px;
+    }
+    .service-content {
+        height: 490px;
+    }
+    .google-map iframe {
+        height: 650px;
+    }
+
 
 	.slider-bg {
 		padding-top: 145px;
@@ -4587,6 +4756,20 @@ button.card-report-btn2 {
 		font-size: 37px;
 		line-height: 47px;
 		max-width: 677px;
+	}
+
+    .img-text h1 {
+        font-size: 33px;
+        line-height: 42px;
+        max-width: 450px;
+        width: 100%;
+        /* margin-top: 173px; */
+    }
+
+    .img-text p {
+		margin-top: 22px;
+		width: 100%;
+		max-width: 422px;
 	}
 
 	.navbar-brand img {
