@@ -720,7 +720,7 @@ nav.navbar.navbar-expand-lg {
 	right: -250vh;
 	display: flex;
 	align-items: center;
-    transition: 0.5s cubic-bezier(1, 0.05, 0, 1.1);
+    transition: 0.5s cubic-bezier(1, 0.05, 0.08, 1.14);
 	overflow: hidden;
 	font-family: 'Raleway';
 	top: 0;
@@ -4243,6 +4243,9 @@ button.card-report-btn2 {
 		align-items: center;
 	}
 
+	.trusted h2 {
+		margin-left: -21px;
+	}
 	#menu {
 		display: none;
 	}
