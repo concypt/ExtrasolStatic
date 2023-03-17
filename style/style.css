@@ -236,7 +236,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .nav-icons li.nav-item {
-	margin-left: 30px;
+	margin-left: 13px;
 	list-style: none;
 }
 
@@ -311,7 +311,9 @@ nav.navbar.navbar-expand-lg {
 	background-position-x: center;
 	background-position-y: 25px;
 }
-
+.blog{
+	overflow-x: hidden;
+}
 .career-detail-txt h2 {
 	font-weight: 500;
 	font-size: 30px;
@@ -1577,7 +1579,7 @@ input::placeholder {
 
 .trusted {
 	padding-bottom: 120px;
-	margin-top: 92px;
+	margin-top: 54px;
 	display: flex;
 	align-items: center;
 	margin-left: 50px;
@@ -1641,7 +1643,7 @@ input::placeholder {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 37px;
+	row-gap: 30px;
 	margin: 0;
 	width: 100%;
 	max-width: 233px;
@@ -1722,7 +1724,7 @@ ul {
 	color: #fff;
 }
 
-.office a {
+.footer .office a {
 	font-size: 26px;
 	font-weight: 400;
 	color: #FDBC3B;
@@ -1771,7 +1773,7 @@ ul {
 	line-height: 58px;
 	color: #FDBC3B;
 	width: 100%;
-	max-width: 239px;
+	max-width: 360px;
 }
 
 .form-text input[type=email] {
@@ -1831,7 +1833,7 @@ ul {
 }
 
 .buttons button {
-	margin-left: 50px;
+	margin-left: 22px;
 	margin-top: 20px;
 	background: transparent;
 	border: 2px solid #FDBC3B;
@@ -1926,7 +1928,7 @@ dl, ol, ul {
 	font-size: 50px;
 	line-height: 64px;
 	color: #19164C;
-	padding-top: 127px;
+	padding-top: 217px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -2029,6 +2031,7 @@ select {
 	margin-top: 80px;
 	margin-left: 385px;
 	position: relative;
+	border: none;
 }
 
 .proposal-btn .wave {
@@ -2433,8 +2436,10 @@ button#btn1 {
 	padding: 0;
 	background: #82CBAD;
 	margin-top: -82px;
-	padding-top: 35px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-left: 35px;
+	padding-right: 12px;
 	border-radius: 0px 0px 50px 50px;
 	transition: 0.5s;
 	height: 448px;
@@ -3037,6 +3042,7 @@ button#btn1 {
 
 .all-card {
 	padding-bottom: 98px;
+    text-align: center;
 }
 
 .work-content h1 {
@@ -3070,6 +3076,8 @@ button#btn1 {
 	line-height: 32px;
 	color: #19164C;
 	margin-top: 49px;
+    text-align: left;
+    margin-left: 45px;
 }
 
 .work-card p {
@@ -3080,6 +3088,8 @@ button#btn1 {
 	margin-top: 13px;
 	width: 100%;
 	max-width: 738px;
+    text-align: left;
+    margin-left: 45px;
 }
 
 .load-btn {
@@ -3090,8 +3100,19 @@ button#btn1 {
 .load-btn button {
 	width: 100%;
 	max-width: 271px;
+	margin-right: 0;
 }
-
+.load-btn button .wave {
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    width: 100%;
+    height: 106%;
+    overflow: hidden;
+    border-radius: 21px;
+    opacity: 0;
+    transition: 0.5s;
+}
 .work-details {
 	padding-top: 82px;
 	padding-bottom: 123px;
@@ -3108,7 +3129,7 @@ button#btn1 {
 }
 
 .bottom-txt {
-	padding-bottom: 64px;
+    padding-bottom: 41px;
 }
 
 .bottom-txt h1 {
@@ -3219,7 +3240,7 @@ button#btn1 {
 
 .work-details-four ul li a {
 	text-decoration: none;
-	color: #000000;
+	color: #19164C;
 }
 
 .sector {
@@ -3251,6 +3272,7 @@ button#btn1 {
 	max-width: 1139px;
 	padding-top: 75px;
 	margin-left: 34px;
+	overflow-x: hidden;
 }
 
 .videos {
@@ -3547,9 +3569,9 @@ button.card-report-btn2 {
 .service-bg-icone1{
     display: none;
 }
-.service-content .service-icone1 .service-bg-icone1{
+img.service-icone1 .service-bg-icone1{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone1 {
     display: block;
@@ -3560,9 +3582,9 @@ button.card-report-btn2 {
 .service-bg-icone2{
     display: none;
 }
-.service-content .service-icone2 .service-bg-icone2{
+img.service-icone2 .service-bg-icone2{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone2 {
     display: block;
@@ -3573,9 +3595,9 @@ button.card-report-btn2 {
 .service-bg-icone3{
     display: none;
 }
-.service-content .service-icone3 .service-bg-icone3{
+img.service-icone3 .service-bg-icone3{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone3 {
     display: block;
@@ -3586,9 +3608,9 @@ button.card-report-btn2 {
 .service-bg-icone4{
     display: none;
 }
-.service-content .service-icone4 .service-bg-icone4{
+img.service-icone3 .service-bg-icone4{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone4 {
     display: block;
@@ -3599,9 +3621,9 @@ button.card-report-btn2 {
 .service-bg-icone5{
     display: none;
 }
-.service-content .service-icone5 .service-bg-icone5{
+img.service-icone5 .service-bg-icone5{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone5 {
     display: block;
@@ -3612,9 +3634,9 @@ button.card-report-btn2 {
 .service-bg-icone6{
     display: none;
 }
-.service-content .service-icone6 .service-bg-icone6{
+img.service-icone6 .service-bg-icone6{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone6 {
     display: block;
@@ -3625,9 +3647,9 @@ button.card-report-btn2 {
 .service-bg-icone7{
     display: none;
 }
-.service-content .service-icone7 .service-bg-icone7{
+img.service-icone7 .service-bg-icone7{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone7 {
     display: block;
@@ -3638,9 +3660,9 @@ button.card-report-btn2 {
 .service-bg-icone8{
     display: none;
 }
-.service-content .service-icone8 .service-bg-icone8{
+img.service-icone8 .service-bg-icone8{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone8 {
     display: block;
@@ -3651,9 +3673,9 @@ button.card-report-btn2 {
 .service-bg-icone9{
     display: none;
 }
-.service-content .service-icone9 .service-bg-icone9{
+img.service-icone9 .service-bg-icone8{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone9 {
     display: block;
@@ -3661,12 +3683,12 @@ button.card-report-btn2 {
 .service-content:hover .service-icone9 {
     display: none;
 }
-.service-bg-icone10{
+.service-bg-icone10 .service-bg-icone4{
     display: none;
 }
-.service-content .service-icone10 .service-bg-icone10{
+img.service-icone10 .service-bg-icone9{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone10 {
     display: block;
@@ -3674,9 +3696,9 @@ button.card-report-btn2 {
 .service-content:hover .service-icone10 {
     display: none;
 }
-.service-content .service-icone11 .service-bg-icone11{
+img.service-icone11 .service-bg-icone11{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-bg-icone11{
     display: none;
@@ -3690,9 +3712,9 @@ button.card-report-btn2 {
 .service-bg-icone12{
     display: none;
 }
-.service-content .service-icone12 .service-bg-icone12{
+img.service-icone12 .service-bg-icone12{
     width: 100%;
-    max-width: 139px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone12 {
     display: block;
@@ -3815,6 +3837,9 @@ button.card-report-btn2 {
         margin-bottom: 100px;
         margin-top: 2px;
     }
+	.slider-swiper {
+		padding-left: 150px;
+	}
 	.header-bg h1 {
 		margin-top: 80px;
 	}
@@ -3822,7 +3847,12 @@ button.card-report-btn2 {
 	#menu ul {
 		margin-left: 472px;
 	}
-
+	.plan-audit-card li {
+		margin-left: 0;
+	}
+	.plan-audit-card button {
+		margin-left: 0;
+	}
 	.nav-icons li.nav-item {
 		margin-left: 0px;
 	}
@@ -3935,6 +3965,21 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 187px;
 	}
+	.input-form .grid-container {
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 100%;
+		max-width: unset;
+		text-align: center;
+	}
+	.form-details h1 {
+		text-align: center;
+	}
+	.form-details {
+		padding-top: 203px;
+	    padding-left: 5px; 
+		padding-bottom: 69px;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -3943,8 +3988,18 @@ button.card-report-btn2 {
 		margin-left: 140px;
 	}
 
+	.audit-web-form {
+		float: none;
+		margin-right: 0;
+	}
+
 	button.card-report-btn2 {
 		margin-top: 131px;
+		margin-bottom: 50px;
+	}
+
+	.copyright .url a {
+		margin-left: 211px;
 	}
 
 	.report-audit h1 {
@@ -3960,6 +4015,18 @@ button.card-report-btn2 {
 		line-height: 47px;
 	}
 
+    
+    .work-card h1 {
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    .work-card p {
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    
 	.work-details-four {
 		padding-top: 30px;
 		padding-bottom: 152px;
@@ -4028,6 +4095,21 @@ button.card-report-btn2 {
 	.service-content .learn-sec {
 		padding-top: 40px;
 	}
+	.cards-body {
+		padding: 0;
+		background: #82CBAD;
+		margin-top: -82px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		padding-left: 12px;
+		padding-right: 12px;
+		border-radius: 0px 0px 50px 50px;
+		transition: 0.5s;
+		height: 448px;
+	}
+	.about-us h5 {
+		max-width: 909px;
+	}
 }
 
 @media (max-width: 1080px) {
@@ -4051,6 +4133,10 @@ button.card-report-btn2 {
 		margin-right: auto;
 	}
 
+	button.card-report-btn1 {
+		margin-top: 102px;
+	}
+	
 	.report-section .report-center {
 		display: flex;
 		-ms-flex-wrap: wrap;
@@ -4252,6 +4338,7 @@ button.card-report-btn2 {
 
 	.mt {
 		margin-top: 8px;
+		margin-bottom: 11px;
 	}
 
 	.tree-bg {
@@ -4332,8 +4419,9 @@ button.card-report-btn2 {
 		font-size: 30px;
 		line-height: 31px;
 		color: #000000;
+		margin-bottom: 27px;
+		margin-top: -30px;
 	}
-
 	.form-text {
 		margin-top: 240px;
 		margin-left: 102px;
@@ -4395,6 +4483,15 @@ button.card-report-btn2 {
         line-height: 62px;
     }
 
+	.p-t {
+		padding-top: 3px;
+	}
+
+	.work-img-two {
+		padding-top: 39px;
+		text-align: center;
+	}
+
     .form-details {
         padding-top: 203px;
         padding-left: 0;
@@ -4407,14 +4504,23 @@ button.card-report-btn2 {
     #menu {
         display: none;
     }
-
+	.work-details-three {
+		padding-top: 84px;
+		padding-bottom: 25px;
+	}
     .trusted h2 {
 		margin-left: -21px;
 	}
 
-
-    /*    padding-left: 191px;*/
-    /*}*/
+	.work-img {
+		padding-top: 70px;
+		padding-bottom: 86px;
+		text-align: center;
+	}
+	.work-details-four {
+		padding-top: 30px;
+		padding-bottom: 71px;
+	}
 	.card {
 		margin-top: 40px;
 	}
@@ -4626,7 +4732,7 @@ button.card-report-btn2 {
 	}
 
 	.report-img {
-		margin-top: 59px;
+		margin-top: -39px;
 		margin-bottom: 66px;
 	}
 
@@ -4672,13 +4778,21 @@ button.card-report-btn2 {
 		margin-bottom: 9px;
 		row-gap: 28px;
 	}
+	.about-us h5 {
+		font-size: 23px;
+		line-height: 45px;
+		max-width: 661px;
+		padding-top: 69px;
+		margin-left: 34px;
+	}
 }
 
 @media (max-width: 787px) {
 
     .header-bg button {
-        margin-left: 47px;
+        margin-left: 0px;
     }
+
     .service-content:hover {
         height: 490px;
     }
@@ -4688,8 +4802,25 @@ button.card-report-btn2 {
     .google-map iframe {
         height: 650px;
     }
+	.plan-audit-card li {
+		width: 100%;
+		max-width: 381px;
+		margin: 0 auto;
+	}
 
+	.card-report {
+		text-align: center;
+	}
 
+	.plan-audit-card button {
+		margin-top: 50px;
+		margin-bottom: 65px;
+	}
+
+	button.card-report-btn1 {
+		margin-top: 70px;
+		margin-bottom: 0;
+	}
 	.slider-bg {
 		padding-top: 145px;
 		padding-left: 20px;
@@ -4700,7 +4831,38 @@ button.card-report-btn2 {
 		padding-right: 0px;
 		text-align: center;
 	}
-
+	.career-about p {
+		padding-top: 27px;
+	}
+	.career-main-img img {
+		padding-bottom: 57px;
+	}
+	.career-main-img {
+		margin-top: 18px;
+	}
+	.career-about-txt h5 {
+		font-size: 21px;
+		line-height: 38px;
+		padding-top: 43px;
+	}
+	.open-text p {
+		font-size: 23px;
+		line-height: 43px;
+	}
+	.links {
+		padding: 10px;
+	}
+	.open-texts {
+		background-size: contain;
+	}
+	.links h1 {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.links a {
+		font-size: 25px;
+		line-height: 43px;
+	}
 	.portfolio-btn {
 		display: none;
 	}
@@ -4798,7 +4960,7 @@ button.card-report-btn2 {
 	.header-bg h1 {
 		font-size: 36px;
 		line-height: 42px;
-		max-width: 539px;
+		max-width: unset;
 		margin-top: 145px;
 		font-weight: 600;
 	}
@@ -4865,6 +5027,7 @@ button.card-report-btn2 {
 
 	.trusted img {
 		margin-left: 6px;
+		margin-top: 17px;
 	}
 
 	.footer-btn {
@@ -4872,7 +5035,7 @@ button.card-report-btn2 {
 	}
 
 	.copyright ul {
-		margin-left: -2px;
+		margin-left: 30px;
 	}
 
 	.business-txt h1 {
@@ -4900,7 +5063,7 @@ button.card-report-btn2 {
 	}
 
 	.footer-bg {
-		background: url(../img/footer-res-bg.png);
+		background: url(../img/footer-res-2.png);
 		background-repeat: no-repeat;
 		background-position: left;
 		background-position-y: 991px;
@@ -4985,7 +5148,15 @@ button.card-report-btn2 {
 	.mySwiper-two .swiper-slide p {
 		font-size: 16px;
 	}
-
+	.work-details-three p {
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 46px;
+		color: #1D1655;
+		width: 100%;
+		max-width: 628px;
+		margin-top: 40px;
+	}
 	.report-audit h1 {
 		padding-top: 97px;
 	}
@@ -5054,8 +5225,17 @@ button.card-report-btn2 {
 	.copyright .url a {
 		margin-left: -281px;
 	}
+	.proposal-btn {
+		width: 100%;
+		max-width: 100%;
+	}
+	.proposal-form .form-control {
+		font-size: 19px;
 
-
+	}
+	.proposal-form input[type=text]::placeholder{
+		font-size: 19px;
+	}
     /*.slick-list {*/
     /*    width: 100%;*/
     /*}*/
@@ -5169,7 +5349,7 @@ button.card-report-btn2 {
 	}
 
 	.location-icon img {
-		margin-right: 29px;
+		margin-right: 19px;
 	}
 
 	.slider-bg {
