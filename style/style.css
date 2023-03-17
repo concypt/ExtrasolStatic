@@ -2129,8 +2129,7 @@ select {
 	color: #1D1655;
 	margin-top: -101px;
 }
-<<<<<<< HEAD
-=======
+
 .nav-tabs .first{
     background-image: url(../img/01.png);
     background-repeat: no-repeat;
@@ -2183,7 +2182,7 @@ select {
     color: #1D1655;
     margin-top: -101px;
   }
->>>>>>> 46b6d23d547e0e5387b230318a339c60d292574e
+
 /*Report Audit Page CSS*/
 
 .report-audit {
@@ -3675,7 +3674,7 @@ button.card-report-btn2 {
 	}
     .mouse {
         margin-bottom: 100px;
-        margin-top: 42px;
+        margin-top: 2px;
     }
 	.header-bg h1 {
 		margin-top: 80px;
