@@ -916,7 +916,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .slider-sec .hide-arrow{
-    padding-left: 172px;
+    padding-left: 160px;
     cursor: pointer;
     opacity: 0;
 }
@@ -1107,7 +1107,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .slider-sec .arrow {
-	padding-left: 172px;
+	padding-left: 160px;
 	cursor: pointer;
 }
 
