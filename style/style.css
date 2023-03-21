@@ -3728,6 +3728,13 @@ img.service-icone12 .service-bg-icone12{
 		width: 62%;
 	}
 
+	.slider-sec .arrow {
+		padding-left: 114px;
+		cursor: pointer;
+	}
+	.slider-sec .hide-arrow {
+		padding-left: 123px;
+	}
 	.close-icon {
 		right: 46px;
 	}
