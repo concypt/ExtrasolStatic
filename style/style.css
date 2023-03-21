@@ -2915,6 +2915,10 @@ button#btn1 {
 	width: 100%;
 	max-width: 489px;
 }
+.contact-details a{
+	text-decoration: none;
+	color: #1D1655 ;
+}
 
 .google-map {
 	padding-top: 118px;
@@ -4354,6 +4358,10 @@ img.service-icone12 .service-bg-icone12{
 
 	.business-img h6 {
 		padding-bottom: 60px;
+	}
+	.service-header .report-btn {
+		width: 100%;
+		max-width: 310px;
 	}
 
 	.report-btn {
