@@ -5363,9 +5363,10 @@ img.service-icone12 .service-bg-icone12{
 	.report-form {
 		height: 651px;
 	}
-    /*.learn-sec .arrow {*/
-    /*    padding-left: 141px;*/
-    /*}*/
+
+	/*.learn-sec .arrow {*/
+	/*    padding-left: 141px;*/
+	/*}*/
 	.report-form input[type=text] {
 		max-width: 299px;
 	}
@@ -5413,12 +5414,14 @@ img.service-icone12 .service-bg-icone12{
 	.content-hide {
 		display: none;
 	}
-    /*.slide-track {*/
-    /*    margin-top: -18px;*/
-    /*}*/
-    /*.company-logo {*/
-    /*    height: 121px;*/
-    /*}*/;
+
+	/*.slide-track {*/
+	/*    margin-top: -18px;*/
+	/*}*/
+	/*.company-logo {*/
+	/*    height: 121px;*/
+	/*}*/
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
