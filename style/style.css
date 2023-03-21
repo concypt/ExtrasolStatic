@@ -2197,7 +2197,7 @@ select {
 	text-align: center;
 	background: url(../img/Vector.svg);
 	background-repeat: no-repeat;
-	background-position-y: 65px;
+	background-position-y: 127px;
 	background-position-x: center;
 	height: 740px;
 	width: 100%;
@@ -2211,7 +2211,7 @@ select {
 	font-size: 57px;
 	line-height: 68px;
 	color: #FFFFFF;
-	padding-top: 198px;
+	padding-top: 260px;
 }
 
 .header .blog-header {
@@ -4528,6 +4528,7 @@ img.service-icone12 .service-bg-icone12{
 	.pop-1 img {
 		margin-top: -50px;
 		margin-left: -62px;
+		max-width: 132px;
 	}
 
 	.for-txt {
@@ -4593,6 +4594,8 @@ img.service-icone12 .service-bg-icone12{
 	.pop-2 img {
 		margin-top: -50px;
 		margin-left: -197px;
+		max-width: 173px;
+
 	}
 
 	.for-res {
