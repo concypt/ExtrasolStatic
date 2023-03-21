@@ -2273,19 +2273,15 @@ select {
 	margin-top: 62px;
 }
 
-.sort:focus {
-	border-radius: 20px;
-}
-
 .dropdown-menu {
-	background-color: #FDBC3B;
-	border-radius: 0px 0px 20px 20px;
-	margin-left: 0px;
-	border: none;
-	margin-top: -17px;
-	width: 100%;
-	max-width: 169px;
-	z-index: 0;
+    background-color: #FDBC3B;
+    border-radius: 20px;
+    margin-left: 6px;
+    border: none;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 156px;
+    z-index: 2;
 }
 
 .dropdown-toggle::after {
@@ -2786,7 +2782,7 @@ button#btn1 {
 .service-content h1 {
 	font-weight: 500;
 	font-size: 35px;
-	line-height: 55px;
+	line-height: 39px;
 	color: #1D1655;
 	padding-top: 41px;
 }
