@@ -2469,6 +2469,7 @@ button#btn1 {
 	color: #19164C;
 	margin-bottom: 20px;
 	transition: 0.5s;
+	margin-top: 20px;
 }
 
 .cards-body .branding {
@@ -3085,7 +3086,7 @@ button#btn1 {
 }
 
 .work-card {
-	margin-top: 40px;
+	margin-top: 29px;
 }
 
 .work-card img {
@@ -3102,6 +3103,7 @@ button#btn1 {
 	margin-top: 49px;
     text-align: left;
     margin-left: 45px;
+	margin-bottom: 0;
 }
 
 .work-card p {
@@ -3322,7 +3324,7 @@ button#btn1 {
 	float: right;
 	margin-top: 53px;
 	text-align: left;
-	margin-right: 20px;
+	margin-right: 40px;
 }
 
 .video img {
@@ -3347,7 +3349,7 @@ button#btn1 {
 	line-height: 68px;
 	text-align: center;
 	color: #19164C;
-	padding-top: 65px;
+	padding-top: 61px;
 }
 
 .digital .grid-container {
@@ -4232,7 +4234,9 @@ button.card-report-btn2 {
 	.header-bg button {
 		margin-top: 29px;
 	}
-
+	.business-img h6 {
+		padding-bottom: 109px;
+	}
 	button.card-report-btn1 {
 		margin-top: 102px;
 	}
@@ -4444,9 +4448,6 @@ button.card-report-btn2 {
 		margin-top: 71px;
 	}
 
-	.business-img h6 {
-		padding-bottom: 60px;
-	}
 	.service-header .report-btn {
 		width: 100%;
 		max-width: 310px;
@@ -4520,6 +4521,11 @@ button.card-report-btn2 {
 		color: #000000;
 		margin-bottom: 27px;
 		margin-top: -30px;
+	}
+	.form-text form{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
 	}
 	.form-text {
 		margin-top: 240px;
@@ -4955,6 +4961,9 @@ button.card-report-btn2 {
 		max-width: 381px;
 		margin: 0 auto;
 	}
+	.header .blog-header h1 {
+		font-size: 41px;
+	}
 	.slider-swiper {
 		padding-left: 0px;
 		padding-top: 50px;
@@ -4972,7 +4981,9 @@ button.card-report-btn2 {
 		margin-top: 50px;
 		margin-bottom: 65px;
 	}
-
+	.business-img h6 {
+		padding-bottom: 25px;
+	}
 	.form-text h1 {
 		width: 100%;
 		max-width: 183px;
@@ -5226,7 +5237,7 @@ button.card-report-btn2 {
 		background: url(../img/footer-res-2.png);
 		background-repeat: no-repeat;
 		background-position: left;
-		background-position-y: 991px;
+		background-position-y: 1125px;
 	}
 
 	.form-text {
@@ -5234,12 +5245,13 @@ button.card-report-btn2 {
 		margin-left: 26px;
 	}
 
+	
 	.buttons {
-		margin-left: 0px;
-		margin-top: 194px;
+		margin-top: 106px;
 		display: flex;
 		flex-wrap: nowrap;
-		margin-left: -28px;
+		margin-left: -33px;
+		margin-left: -27px;
 	}
 
 	.buttons button {
@@ -5420,10 +5432,11 @@ button.card-report-btn2 {
 	}
 
 	.buttons {
-		margin-top: 208px;
+		margin-top: 106px;
 		display: flex;
 		flex-wrap: nowrap;
-		margin-left: -31px;
+		margin-left: -33px;
+		margin-left: -27px;
 	}
 	.proposal-btn {
 		width: 100%;
@@ -5520,7 +5533,6 @@ button.card-report-btn2 {
 	.report-form {
 		width: 100%;
 		max-width: 430px;
-		height: 635px;
 	}
 
 	.report-form h1 {
@@ -5641,10 +5653,6 @@ button.card-report-btn2 {
 
     .audit-web-form {
         margin-right: 12px;
-    }
-
-    .report-form {
-        height: 651px;
     }
 
     /*.learn-sec .arrow {*/
