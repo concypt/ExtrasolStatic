@@ -1299,10 +1299,10 @@ nav.navbar.navbar-expand-lg {
 	text-align: center;
 	color: #19164C;
 	padding-top: 220px;
-	max-width: 100%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1024.03px;
+	max-width: 1024px;
 }
 
 .p-text p {
@@ -1404,7 +1404,7 @@ nav.navbar.navbar-expand-lg {
 	font-weight: 500;
 	line-height: 34px;
 	color: #D2D0DD;
-	padding-top: 10px;
+	padding-top: 20px;
 	width: 100%;
 	max-width: 506px;
 }
@@ -1417,7 +1417,7 @@ nav.navbar.navbar-expand-lg {
 	border: none;
 	padding-left: 30px;
 	background: #E6E7E8;
-	margin-top: 20px;
+	margin-top: 31px;
 	outline: none;
 }
 
@@ -1429,7 +1429,7 @@ nav.navbar.navbar-expand-lg {
 	border: none;
 	padding-left: 30px;
 	background: #E6E7E8;
-	margin-top: 20px;
+	margin-top: 31px;
 	outline: none;
 }
 
@@ -1447,7 +1447,7 @@ input::placeholder {
 	font-weight: 500;
 	background: #FDBC3B;
 	border-radius: 40px;
-	margin-top: 35px;
+	margin-top: 49px;
 	border: none;
 	position: relative;
 }
@@ -3898,12 +3898,6 @@ button.card-report-btn2 {
 	.service-content .learn-sec {
 		padding-top: 59px;
 	}
-    /*.learn-sec h3 {*/
-    /*    font-weight: 500;*/
-    /*    font-size: 17px;*/
-    /*    line-height: 36px;*/
-    /*    color: #82CBAD;*/
-    /*}*/
 	.sort {
 		margin-bottom: 85px;
 	}
@@ -4175,9 +4169,6 @@ button.card-report-btn2 {
 	.assets {
 		padding-top: 43px;
 	}
-    /*.learn-sec .arrow {*/
-    /*    padding-left: 120px;*/
-    /*}*/
 	.cards-body p {
 		font-size: 14px;
 		line-height: 25px;
@@ -4205,18 +4196,12 @@ button.card-report-btn2 {
 }
 
 @media (max-width: 1080px) {
-	#menu {
-		width: 77%;
-	}
 
 	.mouse {
 		margin-bottom: 100px;
 		margin-top: 36px;
 	}
 
-    /*.learn-sec .arrow {*/
-    /*    padding-left: 90px;*/
-    /*}*/
 	.wrap {
 		width: 100%;
 		max-width: 1000px;
@@ -4230,13 +4215,18 @@ button.card-report-btn2 {
 	.fifth a{
 		line-height: 36px;
 	}
-
 	.header-bg button {
 		margin-top: 29px;
 	}
+
 	.business-img h6 {
 		padding-bottom: 109px;
 	}
+
+	#menu {
+		width: 77%;
+	}
+
 	button.card-report-btn1 {
 		margin-top: 102px;
 	}
@@ -4355,9 +4345,7 @@ button.card-report-btn2 {
 		margin-top: 22px;
 	}
 
-	.report-form {
-		height: 612px;
-	}
+
 
 	.report-form h1 {
 		font-size: 28px;
@@ -4590,6 +4578,7 @@ button.card-report-btn2 {
         font-size: 44px;
         line-height: 62px;
     }
+
 	.proposal .row {
 		display: -ms-flexbox;
 		display: flex;
@@ -4619,7 +4608,7 @@ button.card-report-btn2 {
 		max-width: 100%;
 		text-align: center;
 	}
-	
+
 	.latest-sec .row {
 		display: flow-root;
 		padding-top: 95px;
@@ -4645,7 +4634,7 @@ button.card-report-btn2 {
         padding-top: 203px;
         padding-left: 0;
     }
-	
+
     .for-flexi {
         display: flex;
         align-items: center;
@@ -4789,9 +4778,13 @@ button.card-report-btn2 {
 		max-width: 19px;
 		margin-right: 40px;
 	}
+	.report-center .report-form {
 
+		margin-top: 72px;
+	}
 	.report-form {
 		max-width: 472px;
+		margin-top: 0px;
 	}
 
 	.phone-icon img {
@@ -5449,12 +5442,7 @@ button.card-report-btn2 {
 	.proposal-form input[type=text]::placeholder{
 		font-size: 19px;
 	}
-    /*.slick-list {*/
-    /*    width: 100%;*/
-    /*}*/
-    /*.slick-track{*/
-    /*    margin-top: -30px;*/
-    /*}*/
+
 	.trusted img {
 		margin-left: 28px;
 		width: 100%;
@@ -5512,7 +5500,7 @@ button.card-report-btn2 {
 	}
 
 	.latest-section {
-		background-size: 429px;
+		background-size: 369px;
 	}
 
 	.slide-track {
@@ -5550,7 +5538,7 @@ button.card-report-btn2 {
 		font-size: 17px;
 		line-height:25px;
 		color: #D2D0DD;
-		padding-top: 10px;
+		padding-top: 20px;
 		width: 100%;
 		max-width: 351px;
 	}
@@ -5671,8 +5659,8 @@ button.card-report-btn2 {
 	}
 
 	.latest-content h1 {
-		margin-top: 23px;
-		margin-left: -7px;
+		margin-top: 33px;
+		margin-left: 5px;
 	}
 
 	.report-btn {
