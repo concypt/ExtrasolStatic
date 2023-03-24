@@ -330,7 +330,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .header .career-detail-txt {
-	background: url(../img/blog-bg.svg);
+	background: url(../img/service-bg.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 25px;
@@ -1372,7 +1372,7 @@ nav.navbar.navbar-expand-lg {
 	background-color: #1D1655;
 	max-width: 625px;
 	width: 100%;
-	height: 726px;
+	padding-bottom: 72px;
 	border-radius: 44px;
 	margin-top: 123px;
 	margin-bottom: 123px;
@@ -2199,7 +2199,7 @@ select {
 
 .report-audit-text {
 	text-align: center;
-	background: url(../img/Vector.svg);
+	background: url(../img/report-bg.png);
 	background-repeat: no-repeat;
 	background-position-y: 127px;
 	background-position-x: center;
@@ -2361,7 +2361,7 @@ button#btn1 {
 }
 
 .blog-main {
-	background-image: url(../img/blog-main.svg);
+	background-image: url(../img/service-bg.png);
 	width: 100%;
 	max-width: 846px;
 	height: 546px;
@@ -2605,7 +2605,8 @@ button#btn1 {
 	display: flex;
 	align-items: center;
 	gap: 28px;
-	margin: 22px;
+	margin-left: 22px;
+	margin-top: 22px;
 }
 
 .audit-web-text ul li::before {
@@ -2737,7 +2738,7 @@ button#btn1 {
 }
 
 .service-header {
-	background: url(../img/serviceheader-bg.svg);
+	background: url(../img/service-bg.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 82px;
@@ -2861,7 +2862,7 @@ button#btn1 {
 }
 
 .contact {
-	background: url(../img/serviceheader-bg.svg);
+	background: url(../img/service-bg.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 33px;
@@ -3031,7 +3032,7 @@ button#btn1 {
 }
 
 .digit-content {
-	padding-bottom: 120px;
+	padding-bottom: 163px;
 }
 
 .digit-content h1 {
@@ -3073,6 +3074,7 @@ button#btn1 {
 .work-card img {
 	width: 100%;
 	max-width: 734px;
+	border-radius: 50px;
 }
 
 .work-card h1 {
@@ -3118,10 +3120,17 @@ button#btn1 {
     opacity: 0;
     transition: 0.5s;
 }
+
 .work-details {
-	padding-top: 82px;
-	padding-bottom: 123px;
+	background: url(../img/serviceheader-bg.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 82px;
+	text-align: center;
+	padding-top: 123px;
+	padding-bottom: 130px;
 }
+
 
 .work-details h1 {
 	width: 100%;
@@ -3165,6 +3174,7 @@ button#btn1 {
 .work-img img {
 	width: 100%;
 	max-width: 1345px;
+	border-radius: 30px;
 }
 
 .work-img-two {
@@ -3300,11 +3310,13 @@ button#btn1 {
 .video img {
 	width: 100%;
 	max-width: 882px;
+	border-radius: 50px;
 }
 
 .for-img img {
 	width: 100%;
 	max-width: 582px;
+	border-radius: 50px;
 }
 
 .digital {
@@ -3405,18 +3417,19 @@ button#btn1 {
 .career-imgs img {
 	width: 100%;
 	max-width: 257px;
+	border-radius: 25px;
 }
 
 .career-img-1 {
-	margin-top: -100px;
+	margin-top: -46px;
 }
 
 .career-img-3 {
-	margin-top: -80px;
+	margin-top: -50px;
 }
 
 .career-img-5 {
-	margin-top: -100px;
+	margin-top: -46px;
 }
 
 .career-about {
@@ -3446,16 +3459,18 @@ button#btn1 {
 .career-main-img img {
 	width: 100%;
 	max-width: 1528px;
-	padding-bottom: 135px;
+	margin-bottom: 135px;
+	border-radius: 50px;
 }
 
 .career-main-img {
 	margin-top: 87px;
 	text-align: center;
+
 }
 
 .open-texts {
-	background-image: url(../img/open-bg.svg);
+	background-image: url(../img/open-bg.png);
 	background-repeat: no-repeat;
 	background-position-y: 50px;
 	background-color: #E1DEE5;
@@ -3565,7 +3580,7 @@ button a:hover {
 }
 
 button.card-report-btn1 {
-	margin-top: 280px;
+	margin-top: 250px;
 }
 
 button.card-report-btn2 {
@@ -3574,12 +3589,14 @@ button.card-report-btn2 {
 .service-bg-icone1{
     display: none;
 }
-img.service-icone1 .service-bg-icone1{
+.service-content .service-icone1{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone1 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone1 {
     display: none;
@@ -3587,12 +3604,14 @@ img.service-icone1 .service-bg-icone1{
 .service-bg-icone2{
     display: none;
 }
-img.service-icone2 .service-bg-icone2{
+.service-content .service-icone2{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone2 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone2 {
     display: none;
@@ -3600,12 +3619,14 @@ img.service-icone2 .service-bg-icone2{
 .service-bg-icone3{
     display: none;
 }
-img.service-icone3 .service-bg-icone3{
+.service-content .service-icone3{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone3 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone3 {
     display: none;
@@ -3613,12 +3634,14 @@ img.service-icone3 .service-bg-icone3{
 .service-bg-icone4{
     display: none;
 }
-img.service-icone3 .service-bg-icone4{
+.service-content .service-icone4{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone4 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone4 {
     display: none;
@@ -3626,12 +3649,14 @@ img.service-icone3 .service-bg-icone4{
 .service-bg-icone5{
     display: none;
 }
-img.service-icone5 .service-bg-icone5{
+.service-content .service-icone5{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone5 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone5 {
     display: none;
@@ -3639,12 +3664,14 @@ img.service-icone5 .service-bg-icone5{
 .service-bg-icone6{
     display: none;
 }
-img.service-icone6 .service-bg-icone6{
+.service-content .service-icone6{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone6 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone6 {
     display: none;
@@ -3652,12 +3679,14 @@ img.service-icone6 .service-bg-icone6{
 .service-bg-icone7{
     display: none;
 }
-img.service-icone7 .service-bg-icone7{
+.service-content .service-icone7{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone7 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone7 {
     display: none;
@@ -3665,12 +3694,14 @@ img.service-icone7 .service-bg-icone7{
 .service-bg-icone8{
     display: none;
 }
-img.service-icone8 .service-bg-icone8{
+.service-content .service-icone8{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone8 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone8 {
     display: none;
@@ -3678,12 +3709,14 @@ img.service-icone8 .service-bg-icone8{
 .service-bg-icone9{
     display: none;
 }
-img.service-icone9 .service-bg-icone8{
+.service-content .service-icone9{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone9 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone9 {
     display: none;
@@ -3691,17 +3724,21 @@ img.service-icone9 .service-bg-icone8{
 .service-bg-icone10{
     display: none;
 }
-img.service-icone10 .service-bg-icone9{
+.service-content .service-icone10{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone10 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone10 {
     display: none;
+	width: 100%;
+	max-width: 115px;
 }
-img.service-icone11 .service-bg-icone11{
+.service-content .service-icone11{
     width: 100%;
     max-width: 115px;
 }
@@ -3710,6 +3747,8 @@ img.service-icone11 .service-bg-icone11{
 }
 .service-content:hover .service-bg-icone11 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone11 {
     display: none;
@@ -3717,12 +3756,14 @@ img.service-icone11 .service-bg-icone11{
 .service-bg-icone12{
     display: none;
 }
-img.service-icone12 .service-bg-icone12{
+.service-content .service-icone12{
     width: 100%;
     max-width: 115px;
 }
 .service-content:hover .service-bg-icone12 {
     display: block;
+	width: 100%;
+	max-width: 115px;
 }
 .service-content:hover .service-icone12 {
     display: none;
@@ -4063,6 +4104,7 @@ img.service-icone12 .service-bg-icone12{
 		max-width: 287px;
 		height: 67px;
 		margin-right: 127px;
+		margin-left: 127px;
 		margin-top: 32px;
 	}
 
@@ -4504,9 +4546,18 @@ img.service-icone12 .service-bg-icone12{
         font-size: 44px;
         line-height: 62px;
     }
-
+	.proposal .row {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+		flex-direction: column;
+		align-items: center;
+	}
 	.p-t {
-		padding-top: 3px;
+		padding-top: 75px;
 	}
 
 	.work-img-two {
@@ -4973,7 +5024,7 @@ img.service-icone12 .service-bg-icone12{
 		margin-left: 20px;
 	}
 
-	img.career-img-4 {
+	.career-img-4 {
 		display: none;
 	}
 
@@ -5177,7 +5228,7 @@ img.service-icone12 .service-bg-icone12{
 	}
 
 	.service-bg .p-t {
-		padding-top: 78px;
+		padding-top: 75px;
 	}
 
 	.service-content h1 {
@@ -5206,6 +5257,11 @@ img.service-icone12 .service-bg-icone12{
 	.swiper-two {
 		max-width: 472px;
 	}
+	.service-header {
+		background-position-y: center;
+		background-size: contain;
+	}
+
 	.slider-bg h1 {
 		text-align: center;
 		font-weight: 500;
@@ -5478,7 +5534,18 @@ img.service-icone12 .service-bg-icone12{
     .img-text .lapi {
         margin-top: 77px;
     }
-
+	.contact {
+		background-size: contain;
+	}
+	.service-header h1 {
+		font-size: 34px;
+		line-height: 49px;
+		max-width: 312px;
+	}
+	.service-header .report-btn {
+		width: 100%;
+		max-width: 269px;
+	}
     .mouse {
         margin-bottom: 60px;
     }
@@ -5544,7 +5611,7 @@ img.service-icone12 .service-bg-icone12{
 		background-size: contain;
 	}
 
-	img.career-img-2 {
+	.career-img-2 {
 		display: none;
 	}
 
@@ -5586,7 +5653,14 @@ img.service-icone12 .service-bg-icone12{
 		margin-top: 0;
 	}
 
-
+	.input-form .grid-item button {
+		width: 100%;
+		max-width: 200px;
+		height: 60px;
+		margin-right: 81px;
+		margin-left: 81px;
+		margin-top: 32px;
+	}
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
