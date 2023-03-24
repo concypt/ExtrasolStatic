@@ -2907,7 +2907,8 @@ button#btn1 {
 }
 
 .map-content {
-	margin: 144px;
+	margin-left: 105px;
+	margin-top: 144px;
 	padding-bottom: 192px;
 }
 
@@ -3626,12 +3627,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone2{
     width: 100%;
-    max-width: 115px;
+    max-width: 99px;
 }
 .service-content:hover .service-bg-icone2 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 99px;
 }
 .service-content:hover .service-icone2 {
     display: none;
@@ -3641,12 +3642,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone3{
     width: 100%;
-    max-width: 115px;
+    max-width: 88px;
 }
 .service-content:hover .service-bg-icone3 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 88px;
 }
 .service-content:hover .service-icone3 {
     display: none;
@@ -3686,12 +3687,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone6{
     width: 100%;
-    max-width: 115px;
+    max-width: 97px;
 }
 .service-content:hover .service-bg-icone6 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 97px;
 }
 .service-content:hover .service-icone6 {
     display: none;
@@ -3701,12 +3702,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone7{
     width: 100%;
-    max-width: 115px;
+    max-width: 100px;
 }
 .service-content:hover .service-bg-icone7 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 100px;
 }
 .service-content:hover .service-icone7 {
     display: none;
@@ -3716,12 +3717,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone8{
     width: 100%;
-    max-width: 115px;
+    max-width: 80px;
 }
 .service-content:hover .service-bg-icone8 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 80px;
 }
 .service-content:hover .service-icone8 {
     display: none;
@@ -3731,12 +3732,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone9{
     width: 100%;
-    max-width: 115px;
+    max-width: 78px;
 }
 .service-content:hover .service-bg-icone9 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 78px;
 }
 .service-content:hover .service-icone9 {
     display: none;
@@ -3746,21 +3747,21 @@ button.card-report-btn2 {
 }
 .service-content .service-icone10{
     width: 100%;
-    max-width: 115px;
+    max-width: 100px;
 }
 .service-content:hover .service-bg-icone10 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 100px;
 }
 .service-content:hover .service-icone10 {
     display: none;
 	width: 100%;
-	max-width: 115px;
+	max-width: 100px;
 }
 .service-content .service-icone11{
     width: 100%;
-    max-width: 115px;
+    max-width: 96px;
 }
 .service-bg-icone11{
     display: none;
@@ -3768,7 +3769,7 @@ button.card-report-btn2 {
 .service-content:hover .service-bg-icone11 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 96px;
 }
 .service-content:hover .service-icone11 {
     display: none;
@@ -3778,12 +3779,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone12{
     width: 100%;
-    max-width: 115px;
+    max-width: 98px;
 }
 .service-content:hover .service-bg-icone12 {
     display: block;
 	width: 100%;
-	max-width: 115px;
+	max-width: 98px;
 }
 .service-content:hover .service-icone12 {
     display: none;
@@ -4005,7 +4006,7 @@ button.card-report-btn2 {
 	}
 
 	.service-content {
-		height: 490px;
+		height: 444px;
 		padding-left: 37px;
 		padding-top: 26px;
 	}
@@ -4014,7 +4015,7 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 522px;
 		background: #19164C;
-		height: 490px;
+		height: 444px;
 		padding-left: 37px;
 		padding-top: 26px;
 		border-radius: 50px 50px 0px 50px;
@@ -5281,14 +5282,14 @@ button.card-report-btn2 {
 		margin-left: auto;
 		max-width: 445px;
 		width: 100%;
-		height: 490px;
+		height: 435px;
 		margin-top: 20px;
 	}
 
 	.service-content:hover {
 		max-width: 445px;
 		width: 100%;
-		height: 490px;
+		height: 435px;
 	}
 
 	.service-bg .p-t {
