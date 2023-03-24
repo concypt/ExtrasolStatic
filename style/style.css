@@ -36,7 +36,7 @@ body {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	max-width: 1670px;
+	max-width: 1470px;
 }
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 1.35;
@@ -814,7 +814,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .header-bg {
-	background: url(../img/Vector.svg);
+	background: url(../img/Vector.png);
 	background-repeat: no-repeat;
 	background-position-y: 50px;
 	height: 700px;
@@ -901,9 +901,10 @@ nav.navbar.navbar-expand-lg {
 	padding-top: 145px;
 	padding-left: 110px;
 	background-position-x: 94px;
-	background: url(../img/slider-bg.svg);
+	background: url(../img/slider-bg.png);
 	background-repeat: no-repeat;
 	background-position-y: 80px;
+	background-position-x: 121px;
 }
 
 .slider-swiper {
@@ -981,7 +982,7 @@ nav.navbar.navbar-expand-lg {
 .swiper-btn img {
 	width: 100%;
 	max-width: 60px;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .blue-bg {
@@ -1157,7 +1158,7 @@ nav.navbar.navbar-expand-lg {
 	margin-top: 69px;
 	border: none;
 	float: right;
-	margin-right: 60px;
+	margin-right: 121px;
 	margin-bottom: 100px;
 	position: relative;
 }
@@ -1180,7 +1181,7 @@ nav.navbar.navbar-expand-lg {
 .img-text {
 	text-align: center;
 	padding-top: 150px;
-	background: url(../img/vector-two.svg);
+	background: url(../img/vector-two.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 100px;
@@ -1217,7 +1218,7 @@ nav.navbar.navbar-expand-lg {
 	background: #FDBC3B;
 	padding: 12px 27px;
 	border-radius: 40px;
-	margin-top: 40px;
+	margin-top: 37px;
 	border: none;
 	position: relative;
 }
@@ -1271,7 +1272,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .img-text .lapi {
-	margin-top: 141px;
+	margin-top: 106px;
 	width: 100%;
 	max-width: 1227px;
 }
@@ -1283,7 +1284,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .p-text {
-	background: url(../img/bd-change.svg);
+	background: url(../img/bd-change.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-position-y: 100px;
@@ -1446,10 +1447,9 @@ input::placeholder {
 	font-weight: 500;
 	background: #FDBC3B;
 	border-radius: 40px;
-	margin-top: 25px;
+	margin-top: 35px;
 	border: none;
 	position: relative;
-	margin-left: 10px;
 }
 .report-btn {
     color: #000;
@@ -1569,8 +1569,12 @@ input::placeholder {
 	margin-top: 25px;
 	width: 100%;
 	max-width: 20px;
+	margin-left: 5px;
+    margin-right: 5px;
 }
-
+.p-star-1{
+	margin-left: 0;
+}
 .mySwiper-two .swiper-slide p {
 	color: #000000;
 	margin-top: 35px;
@@ -1629,11 +1633,11 @@ input::placeholder {
 }
 
 .trusted {
-	padding-bottom: 161px;
-	margin-top: 98px;
-	display: flex;
-	align-items: center;
-	margin-left: 50px;
+    padding-bottom: 80px;
+    margin-top: 68px;
+    display: flex;
+    margin-left: 43px;
+    align-items: center;
 }
 
 .trusted h2 {
@@ -4107,7 +4111,9 @@ button.card-report-btn2 {
         margin-left: 0px;
     }
 
-    
+    .latest-content {
+		margin-left: 67px;
+	}
 	.work-details-four {
 		padding-top: 30px;
 		padding-bottom: 152px;
@@ -4223,10 +4229,16 @@ button.card-report-btn2 {
 		line-height: 36px;
 	}
 
+	.header-bg button {
+		margin-top: 29px;
+	}
+
 	button.card-report-btn1 {
 		margin-top: 102px;
 	}
-	
+	.img-text .lapi {
+		margin-top: 195px;
+	}
 	.report-section .report-center {
 		display: flex;
 		-ms-flex-wrap: wrap;
@@ -4288,7 +4300,7 @@ button.card-report-btn2 {
 	}
 
 	.header-bg {
-		background: url(../img/Vector.svg);
+		background: url(../img/Vector.png);
 		background-repeat: no-repeat;
 		background-position-y: 130px;
 		height: 700px;
@@ -4405,7 +4417,7 @@ button.card-report-btn2 {
 	}
 
 	.latest-section {
-		background: url(../img/V4.svg);
+		background: url(../img/V4.png);
 		background-repeat: no-repeat;
 		background-position: left;
 		background-position-y: 162px;
@@ -4429,7 +4441,7 @@ button.card-report-btn2 {
 
 
 	.business-img {
-		margin-top: 81px;
+		margin-top: 71px;
 	}
 
 	.business-img h6 {
@@ -4459,14 +4471,18 @@ button.card-report-btn2 {
 
 	.client {
 		background-size: 229px;
+		margin-top: 66px;
 	}
 
 	.client p {
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 26px;
+		margin: 1rem;
 	}
-
+	.achieve-text h1 {
+		padding-top: 84px;
+	}
 	.client span {
 		font-weight: 600;
 		font-size: 55px;
@@ -4554,6 +4570,12 @@ button.card-report-btn2 {
 	.mySwiper-two .swiper-slide p {
 		max-width: 674px;
 	}
+	.slider-bg {
+		padding-top: 163px;
+	}
+	.business-txt h1 {
+		padding-top: 81px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -4575,7 +4597,9 @@ button.card-report-btn2 {
 	.p-t {
 		padding-top: 75px;
 	}
-
+	.trusted .first-img{
+		margin-left: 0;
+	}
 	.work-img-two {
 		padding-top: 39px;
 		text-align: center;
@@ -4796,7 +4820,6 @@ button.card-report-btn2 {
 	}
 
 	.slider-bg {
-		padding-top: 145px;
 		background-position-x: 94px;
 		background: url(../img/slider-bg.svg);
 		background-repeat: no-repeat;
@@ -4806,6 +4829,7 @@ button.card-report-btn2 {
 
 	.last-button {
 		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.mouse {
@@ -4841,8 +4865,6 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 364px;
 	}
-
-
 
 	.header-bg button {
 		color: #000;
@@ -4925,12 +4947,18 @@ button.card-report-btn2 {
     .google-map iframe {
         height: 650px;
     }
+	.img-text .lapi {
+		margin-top: 91px;
+	}
 	.plan-audit-card li {
 		width: 100%;
 		max-width: 381px;
 		margin: 0 auto;
 	}
-
+	.slider-swiper {
+		padding-left: 0px;
+		padding-top: 50px;
+	}
 	.report-form {
 		padding-left: 30px;
 		padding-right: 30px;
@@ -4964,12 +4992,12 @@ button.card-report-btn2 {
 
 	.slider-bg {
 		padding-top: 145px;
-		padding-left: 20px;
+		padding-left: 10px;
 		background-position-x: 94px;
 		background: url(../img/slider-res-bg.svg);
 		background-repeat: no-repeat;
 		background-position-y: 80px;
-		padding-right: 0px;
+		padding-right: 10px;
 		text-align: center;
 	}
 	.footer-links {
@@ -5166,7 +5194,7 @@ button.card-report-btn2 {
 	}
 
 	.trusted img {
-		margin-left: 6px;
+		margin-left: 20px;
 		margin-top: 17px;
 	}
 
@@ -5292,7 +5320,9 @@ button.card-report-btn2 {
 		background-position-y: center;
 		background-size: contain;
 	}
-
+	.slider-bg .slider-btn {
+		margin-top: 30px;
+	}
 	.slider-bg h1 {
 		text-align: center;
 		font-weight: 500;
@@ -5307,12 +5337,12 @@ button.card-report-btn2 {
 	}
 	.slider-bg {
 		padding-top: 145px;
-		padding-left: 20px;
+		padding-left: 10px;
 		background-position-x: 94px;
 		background: url(../img/slider-res-bg.svg);
 		background-repeat: no-repeat;
 		background-position-y: 80px;
-		padding-right: 0px;
+		padding-right: 10px;
 		text-align: center;
 	}
 	#menu {
@@ -5413,7 +5443,7 @@ button.card-report-btn2 {
     /*    margin-top: -30px;*/
     /*}*/
 	.trusted img {
-		margin-left: 11px;
+		margin-left: 28px;
 		width: 100%;
 		max-width: 100px;
 		margin-top: 11px;
@@ -5490,7 +5520,7 @@ button.card-report-btn2 {
 	.report-form {
 		width: 100%;
 		max-width: 430px;
-		height: 670px;
+		height: 635px;
 	}
 
 	.report-form h1 {
@@ -5633,8 +5663,8 @@ button.card-report-btn2 {
 	}
 
 	.latest-content h1 {
-		margin-top: 152px;
-		margin-left: 52px;
+		margin-top: 23px;
+		margin-left: -7px;
 	}
 
 	.report-btn {
@@ -5665,9 +5695,6 @@ button.card-report-btn2 {
 	}
 	.copyright ul li {
 		padding: 0;
-	}
-	.report-form {
-		margin-top: 0;
 	}
 
 	.input-form .grid-item button {
