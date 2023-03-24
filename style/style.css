@@ -26,6 +26,9 @@ body {
 		transform: translateX(calc(-150px * 6));
 	}
 }
+/* .swiper-slide {
+	margin-right: 0 !important;
+} */
 
 .slider {
 	height: 100px;
@@ -606,7 +609,9 @@ nav.navbar.navbar-expand-lg {
 }
 
 .blog-details-about .spark-img img {
-	padding-bottom: 98px;
+    margin-bottom: 98px;
+    padding-bottom: 0;
+    border-radius: 50px;
 }
 
 .spark-card {
@@ -1256,11 +1261,13 @@ nav.navbar.navbar-expand-lg {
 .form-img .img-size-two {
 	width: 100%;
 	max-width: 365px;
+	border-radius: 20px;
 }
 
 .form-img .img-size-one {
 	width: 100%;
 	max-width: 256px;
+	border-radius: 20px;
 }
 
 .img-text .lapi {
@@ -1352,10 +1359,11 @@ nav.navbar.navbar-expand-lg {
 }
 
 .tree-bg {
-	background: url(../img/tree.svg);
+	background: url(../img/tree.png);
 	background-repeat: no-repeat;
 	background-position-x: right;
 	background-position-y: 70px;
+	background-size: contain;
 }
 
 /*// Report Send*/
@@ -1440,7 +1448,6 @@ input::placeholder {
 	border-radius: 40px;
 	margin-top: 25px;
 	border: none;
-	margin-right: 255px;
 	position: relative;
 }
 .report-btn {
@@ -1666,9 +1673,10 @@ input::placeholder {
 }
 
 .client {
-	background: url(../img/hclient.svg);
+	background: url(../img/hclient.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 	height: 266px;
 	display: flex;
 	justify-content: flex-end;
@@ -1701,19 +1709,22 @@ input::placeholder {
 }
 
 .expert {
-	background: url(../img/expert.svg);
+	background: url(../img/expert.png);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .teams {
-	background: url(../img/teams.svg);
+	background: url(../img/teams.png);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .products {
-	background: url(../img/products.svg);
+	background: url(../img/products.png);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -2361,7 +2372,8 @@ button#btn1 {
 }
 
 .blog-main {
-	background-image: url(../img/blog-main.svg);
+	background-image: url(../img/blog-main.jpg);
+	border-radius: 50px 0px 0px 50px;
 	width: 100%;
 	max-width: 846px;
 	height: 546px;
@@ -2405,7 +2417,7 @@ button#btn1 {
 
 .card-1 {
 	height: 423px;
-	background-image: url(../img/blog-draw.svg);
+	background-image: url(../img/blog-draw.jpg);
 	background-repeat: no-repeat;
 	border-radius: 50px 50px 0px 0px;
 	background-size: cover;
@@ -2413,7 +2425,7 @@ button#btn1 {
 
 .card-2 {
 	height: 423px;
-	background-image: url(../img/blog-ppl.svg);
+	background-image: url(../img/blog-ppl.jpg);
 	background-repeat: no-repeat;
 	border-radius: 50px 50px 0px 0px;
 	background-size: cover;
@@ -2421,7 +2433,7 @@ button#btn1 {
 
 .card-3 {
 	height: 423px;
-	background-image: url(../img/blog-dev.svg);
+	background-image: url(../img/blog-dev.jpg);
 	background-repeat: no-repeat;
 	border-radius: 50px 50px 0px 0px;
 	background-size: cover;
@@ -2523,12 +2535,12 @@ button#btn1 {
 }
 
 .two-cards .card-1 {
-	background-image: url(../img/blog-2cards.svg);
+	background-image: url(../img/blog-2cards.jpg);
 	height: 600px;
 }
 
 .two-cards .card-2 {
-	background-image: url(../img/blog-2cards2.svg);
+	background-image: url(../img/blog-2cards2.jpg);
 	height: 600px;
 }
 
@@ -2547,7 +2559,7 @@ button#btn1 {
 }
 
 .last-section .last-card-two {
-	background-image: url(../img/last-center.svg);
+	background-image: url(../img/last-center.jpg);
 }
 
 .tabs {
@@ -3295,6 +3307,7 @@ button#btn1 {
 	float: right;
 	margin-top: 53px;
 	text-align: left;
+	margin-right: 20px;
 }
 
 .video img {
@@ -3565,7 +3578,7 @@ button a:hover {
 }
 
 button.card-report-btn1 {
-	margin-top: 280px;
+	margin-top: 250px;
 }
 
 button.card-report-btn2 {
@@ -3755,6 +3768,16 @@ img.service-icone12 .service-bg-icone12{
 		margin-left: 0px;
 	}
 
+	.blog-details-btns {
+		margin-left: 0px; 
+
+	}
+
+	.portfolio-btn {
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		gap: 0;
+	}
     .buttons button {
         margin-left: -53px;
         margin-top: 20px;
@@ -3876,6 +3899,10 @@ img.service-icone12 .service-bg-icone12{
 		margin-left: 0px;
 	}
 
+	.video p {
+		margin-right: 0px;
+	}
+	
 	.img2 {
 		display: none;
 	}
@@ -4206,11 +4233,6 @@ img.service-icone12 .service-bg-icone12{
 		margin-left: 0px;
 	}
 
-	nav.navbar.navbar-expand-lg {
-		padding: 0px;
-		padding-top: 22px;
-	}
-
 	li.nav-item {
 		margin-left: 0px;
 	}
@@ -4264,10 +4286,6 @@ img.service-icone12 .service-bg-icone12{
 
 	.trusted h2 {
 		margin-left: 60px;
-	}
-
-	.tree-bg {
-		background-size: contain;
 	}
 
 	.business-img h6 {
@@ -4363,9 +4381,6 @@ img.service-icone12 .service-bg-icone12{
 		margin-bottom: 11px;
 	}
 
-	.tree-bg {
-		background-size: 325px;
-	}
 
 	.business-img {
 		margin-top: 81px;
@@ -4519,10 +4534,10 @@ img.service-icone12 .service-bg-icone12{
 		max-width: 100%;
 		text-align: center;
 	}
-
+	
 	.latest-sec .row {
 		display: flow-root;
-		padding-top: 33px;
+		padding-top: 95px;
 		margin: 0;
 	}
 	.collapse:not(.show){
@@ -4534,12 +4549,10 @@ img.service-icone12 .service-bg-icone12{
 		width: 100%;
 		max-width: 100%;
 	}
-	.nav-item a{
+	.for-nav-menu{
 		display: none;
 	}
-	.nav-icons {
-		display: none;
-	}
+
 	#menu {
 		width: 98%;
 	}
@@ -4552,6 +4565,11 @@ img.service-icone12 .service-bg-icone12{
         display: flex;
         align-items: center;
     }
+
+	nav.navbar.navbar-expand-lg {
+		padding: 0px;
+		padding-top: 22px;
+	}
 
 	.col-gap {
 		column-gap: 85px;
@@ -4900,7 +4918,9 @@ img.service-icone12 .service-bg-icone12{
 		padding-right: 0px;
 		text-align: center;
 	}
-
+	.footer-links {
+		margin-top: 16px;
+	}
 	.header br{
 		display: block;
 	}
@@ -5296,14 +5316,6 @@ img.service-icone12 .service-bg-icone12{
 		display: none;
 	}
 
-	.report-form input[type=text] {
-		max-width: 364px;
-	}
-
-	.report-form input[type=email] {
-		max-width: 364px;
-	}
-
 	.report-btn {
 		max-width: 364px;
 	}
@@ -5434,7 +5446,6 @@ img.service-icone12 .service-bg-icone12{
 
 	.report-form input[type=text] {
 		width: 100%;
-		max-width: 340px;
 		height: 56px;
 		border-radius: 75px;
 		border: none;
@@ -5446,7 +5457,6 @@ img.service-icone12 .service-bg-icone12{
 
 	.report-form input[type=email] {
 		width: 100%;
-		max-width: 340px;
 		height: 56px;
 		border-radius: 75px;
 		border: none;
@@ -5457,7 +5467,7 @@ img.service-icone12 .service-bg-icone12{
 	}
 	.report-form .report-btn {
 		width: 100%;
-		max-width: 328px;
+		max-width: 100%;
 	}
 
 }
@@ -5521,10 +5531,6 @@ img.service-icone12 .service-bg-icone12{
 	/*    padding-left: 141px;*/
 	/*}*/
 	.report-form input[type=text] {
-		max-width: 299px;
-	}
-
-	.report-form input[type=email] {
 		max-width: 299px;
 	}
 
