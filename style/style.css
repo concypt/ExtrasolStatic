@@ -674,6 +674,7 @@ nav.navbar.navbar-expand-lg {
 .spark-card-1 img {
 	width: 100%;
 	max-width: 475px;
+	border-radius: 50px;
 }
 
 .wave::before {
@@ -899,18 +900,15 @@ nav.navbar.navbar-expand-lg {
 
 .slider-bg {
 	padding-top: 145px;
-	padding-left: 110px;
 	background-position-x: 94px;
 	background: url(../img/slider-bg.png);
 	background-repeat: no-repeat;
 	background-position-y: 80px;
 	background-position-x: 121px;
 }
-
-.slider-swiper {
-	padding-left: 300px;
+.slider-text{
+	padding-left: 110px;
 }
-
 .slider-bg h1 {
 	font-weight: 600;
 	font-size: 42px;
@@ -972,6 +970,7 @@ nav.navbar.navbar-expand-lg {
 .swiper-btn {
 	width: 100%;
 	margin-left: -103px;
+	margin-top: -65px;
 }
 
 .swiper-btns {
@@ -1073,7 +1072,6 @@ nav.navbar.navbar-expand-lg {
 	height: 425px;
 	align-items: center;
 	border-radius: 50px;
-	margin-left: 60px;
 	transition: 0.5s;
 }
 
@@ -1538,7 +1536,7 @@ input::placeholder {
 
 .swiper {
 	width: 100%;
-	max-width: 1499px;
+	max-width: 1916px;
 	height: 100%;
     
 }
@@ -1887,12 +1885,10 @@ ul {
 }
 
 .buttons {
-	margin-left: 20px;
 	margin-top: 273px;
 }
 
 .buttons button {
-	margin-left: 22px;
 	margin-top: 20px;
 	background: transparent;
 	border: 2px solid #FDBC3B;
@@ -1944,6 +1940,7 @@ ul {
 	text-decoration: none;
 	color: #fff;
 	transition: 0.5s;
+	margin-right: 20px;
 }
 
 .copyright ul li a:hover,.footer-links a:hover {
@@ -1993,7 +1990,7 @@ dl, ol, ul {
 	font-size: 50px;
 	line-height: 64px;
 	color: #19164C;
-	padding-top: 217px;
+	padding-top: 208px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -2012,11 +2009,11 @@ dl, ol, ul {
 .proposal-img img {
 	width: 100%;
 	max-width: 811px;
-	margin-top: 71px;
+	margin-top: 39px;
 }
 
 .proposal-form {
-	margin-top: 41px;
+	margin-top: 17px;
 	margin-bottom: 126px;
 }
 
@@ -2094,7 +2091,7 @@ select {
 	width: 100%;
 	max-width: 259px;
 	height: 66px;
-	margin-top: 80px;
+	margin-top: 63px;
 	margin-left: 385px;
 	position: relative;
 	border: none;
@@ -2907,8 +2904,7 @@ button#btn1 {
 }
 
 .map-content {
-	margin-left: 105px;
-	margin-top: 144px;
+	margin: 144px;
 	padding-bottom: 192px;
 }
 
@@ -3504,6 +3500,7 @@ button#btn1 {
 	font-size: 50px;
 	line-height: 77px;
 	color: #1D1655;
+	margin-bottom: 21px;
 }
 
 .open-text p {
@@ -3627,12 +3624,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone2{
     width: 100%;
-    max-width: 99px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone2 {
     display: block;
 	width: 100%;
-	max-width: 99px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone2 {
     display: none;
@@ -3642,12 +3639,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone3{
     width: 100%;
-    max-width: 88px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone3 {
     display: block;
 	width: 100%;
-	max-width: 88px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone3 {
     display: none;
@@ -3687,12 +3684,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone6{
     width: 100%;
-    max-width: 97px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone6 {
     display: block;
 	width: 100%;
-	max-width: 97px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone6 {
     display: none;
@@ -3702,12 +3699,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone7{
     width: 100%;
-    max-width: 100px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone7 {
     display: block;
 	width: 100%;
-	max-width: 100px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone7 {
     display: none;
@@ -3717,12 +3714,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone8{
     width: 100%;
-    max-width: 80px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone8 {
     display: block;
 	width: 100%;
-	max-width: 80px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone8 {
     display: none;
@@ -3732,12 +3729,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone9{
     width: 100%;
-    max-width: 78px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone9 {
     display: block;
 	width: 100%;
-	max-width: 78px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone9 {
     display: none;
@@ -3747,21 +3744,21 @@ button.card-report-btn2 {
 }
 .service-content .service-icone10{
     width: 100%;
-    max-width: 100px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone10 {
     display: block;
 	width: 100%;
-	max-width: 100px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone10 {
     display: none;
 	width: 100%;
-	max-width: 100px;
+	max-width: 115px;
 }
 .service-content .service-icone11{
     width: 100%;
-    max-width: 96px;
+    max-width: 115px;
 }
 .service-bg-icone11{
     display: none;
@@ -3769,7 +3766,7 @@ button.card-report-btn2 {
 .service-content:hover .service-bg-icone11 {
     display: block;
 	width: 100%;
-	max-width: 96px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone11 {
     display: none;
@@ -3779,12 +3776,12 @@ button.card-report-btn2 {
 }
 .service-content .service-icone12{
     width: 100%;
-    max-width: 98px;
+    max-width: 115px;
 }
 .service-content:hover .service-bg-icone12 {
     display: block;
 	width: 100%;
-	max-width: 98px;
+	max-width: 115px;
 }
 .service-content:hover .service-icone12 {
     display: none;
@@ -3831,7 +3828,6 @@ button.card-report-btn2 {
 		gap: 0;
 	}
     .buttons button {
-        margin-left: -53px;
         margin-top: 20px;
     }
 
@@ -3923,14 +3919,15 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 571px;
 	}
-
+	
+	.copyright ul li a,.footer-links a {
+		margin-right: 0px;
+	}
+	
     .mouse {
         margin-bottom: 100px;
         margin-top: 2px;
     }
-	.slider-swiper {
-		padding-left: 150px;
-	}
 	.header-bg h1 {
 		margin-top: 80px;
 	}
@@ -4006,7 +4003,7 @@ button.card-report-btn2 {
 	}
 
 	.service-content {
-		height: 444px;
+		height: 490px;
 		padding-left: 37px;
 		padding-top: 26px;
 	}
@@ -4015,7 +4012,7 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 522px;
 		background: #19164C;
-		height: 444px;
+		height: 490px;
 		padding-left: 37px;
 		padding-top: 26px;
 		border-radius: 50px 50px 0px 50px;
@@ -4141,7 +4138,7 @@ button.card-report-btn2 {
 
 	.form-details {
 		padding-top: 203px;
-		padding-left: 185px;
+		padding-left: 0px;
 		padding-bottom: 130px;
 	}
 
@@ -4308,9 +4305,6 @@ button.card-report-btn2 {
 		margin-top: 185px;
 	}
 
-	.slider-swiper {
-		padding-left: 0px;
-	}
 
 	.last-button {
 		z-index: 11111;
@@ -4589,6 +4583,12 @@ button.card-report-btn2 {
 		margin-left: -15px;
 		flex-direction: column;
 		align-items: center;
+	}
+	.slider-text {
+		padding-left: 0px;
+	}
+	.swiper-btn {
+		margin-top: 8px;
 	}
 	.p-t {
 		padding-top: 75px;
@@ -4932,6 +4932,9 @@ button.card-report-btn2 {
 	.copyright ul li {
 		padding: 0 10px;
 	}
+	.career-about p {
+		padding-top: 27px;
+	}
 }
 
 @media (max-width: 787px) {
@@ -4943,7 +4946,9 @@ button.card-report-btn2 {
 	.report-img img {
 		margin-top: 0;
 	}
-
+	.career-main-img img {
+		margin-bottom: 78px;
+	}
     .google-map iframe {
         height: 650px;
     }
@@ -4970,7 +4975,10 @@ button.card-report-btn2 {
 	.card-report {
 		text-align: center;
 	}
-
+	.location-icon img {
+		max-width: 19px;
+	    margin-right: 10px;
+	}
 	.plan-audit-card button {
 		margin-top: 50px;
 		margin-bottom: 65px;
@@ -5001,7 +5009,7 @@ button.card-report-btn2 {
 		background-position-x: 94px;
 		background: url(../img/slider-res-bg.svg);
 		background-repeat: no-repeat;
-		background-position-y: 80px;
+		background-position-y: 130px;
 		padding-right: 10px;
 		text-align: center;
 	}
@@ -5025,12 +5033,8 @@ button.card-report-btn2 {
 	.close-icon {
 		top: 36px;
 	}
-	.career-about p {
-		padding-top: 27px;
-	}
-	.career-main-img img {
-		padding-bottom: 57px;
-	}
+
+
 	.career-main-img {
 		margin-top: 18px;
 	}
@@ -5282,14 +5286,14 @@ button.card-report-btn2 {
 		margin-left: auto;
 		max-width: 445px;
 		width: 100%;
-		height: 435px;
+		height: 490px;
 		margin-top: 20px;
 	}
 
 	.service-content:hover {
 		max-width: 445px;
 		width: 100%;
-		height: 435px;
+		height: 490px;
 	}
 
 	.service-bg .p-t {
@@ -5327,7 +5331,7 @@ button.card-report-btn2 {
 		background-size: contain;
 	}
 	.slider-bg .slider-btn {
-		margin-top: 30px;
+		margin-top: 5px;
 	}
 	.slider-bg h1 {
 		text-align: center;
@@ -5347,7 +5351,7 @@ button.card-report-btn2 {
 		background-position-x: 94px;
 		background: url(../img/slider-res-bg.svg);
 		background-repeat: no-repeat;
-		background-position-y: 80px;
+		background-position-y: 130px;
 		padding-right: 10px;
 		text-align: center;
 	}
@@ -5415,6 +5419,7 @@ button.card-report-btn2 {
 
 	.p-text {
 		background-size: contain;
+		height: 474px;
 	}
 
 	.footer-txt .lets-talk button {
@@ -5445,7 +5450,7 @@ button.card-report-btn2 {
 	}
 
 	.trusted img {
-		margin-left: 28px;
+		margin-left: 11px;
 		width: 100%;
 		max-width: 100px;
 		margin-top: 11px;
