@@ -355,7 +355,7 @@
                 <p>Our focused approach means that you get everything you need to grow your business.</p>
             </div>
             <div class="swiper mySwiper-two swiper-two">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper slider-count">
                     <div class="swiper-slide"><img class="p-logo" src="img/Unilingo_logo_1_ (2).svg">
                         <div><img class="p-stars p-star-1" src="img/rating.svg"> <img class="p-stars" src="img/rating.svg"> <img
                                 class="p-stars" src="img/rating.svg"> <img class="p-stars" src="img/rating.svg"> <img
@@ -435,8 +435,12 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-btn"><img class="swiper-button-next portfolio-next" src="img/right_slider-arrow.svg">
-                <img class="swiper-button-prev portfolio-prev" src="img/left_arrow-btn.svg"></div>
+
+            <div class="portfolio-btn">
+                <img class="swiper-button-next portfolio-next" id="right-white-btn" src="img/right_slider-arrow.svg">
+                <img class="swiper-button-next portfolio-next" id="right-grey-btn" src="img/right-btn-grey.svg">
+                <img class="swiper-button-prev portfolio-prev" id="left-grey-btn" src="img/left_arrow-btn.svg">
+                <img class="swiper-button-prev portfolio-prev" id="left-white-btn" src="img/left-btn-white.svg"></div>
             <div class="trusted">
                 <h2>Trusted By : </h2> <img alt="" src="img/microsoft-icon.svg" class="first-img"> <img alt="" src="img/Unilingo_logo_1_ (4).svg"> <img alt="" src="img/bright-logo.svg"></div>
         </div>
@@ -686,5 +690,35 @@
 
 <!-- End Footer -->
 <script src="js/javascript.js"></script>
+
+<script>
+    var slider = $('.slider-count');
+    var slideCount = slider.find('.swiper-slide').length;
+    var slideIndex = 0;
+    $('.portfolio-next').on('click', function() {
+        slideIndex++;
+        if (slideIndex >= slideCount-1) {
+            $('#right-grey-btn').show();
+            $('#right-white-btn').hide();
+        }
+        if(slideIndex==1){
+            $('#left-grey-btn').hide();
+            $('#left-white-btn').show();
+        }
+
+    });
+    $('.portfolio-prev').on('click', function() {
+        slideIndex--;
+        if (slideIndex > 0) {
+            $('#right-grey-btn').hide();
+            $('#right-white-btn').show();
+        }
+        if(slideIndex==0){
+            $('#left-grey-btn').show();
+            $('#left-white-btn').hide();
+        }
+    });
+
+</script>
 </body>
 </html>

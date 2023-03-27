@@ -3787,6 +3787,12 @@ button.card-report-btn2 {
     display: none;
 
 }
+#right-grey-btn{
+	display: none;
+}
+#left-white-btn{
+	display: none;
+}
 @media (max-width: 1600px) {
 
 	#menu {
