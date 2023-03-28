@@ -152,10 +152,14 @@
             </a></button>
         </div>
             <div class="slider-swiper">
-                <div class="swiper-btn"><img class="swiper-button-new-next swiper-btns" src="img/right-btn.svg"> <img
-                        class="swiper-button-new-prev swiper-btns" src="img/left-btn.svg"></div>
+                <div class="swiper-btn">
+                    <img class="swiper-button-new-next swiper-btns" id="right-white-service" src="img/right-btn.svg">
+                    <img class="swiper-button-new-next swiper-btns" id="right-gray-service" src="img/right-btn-grey.svg">
+                    <img class="swiper-button-new-prev swiper-btns" id="left-gray-service" src="img/left-btn.svg">
+                    <img class="swiper-button-new-prev swiper-btns"  id="left-white-service"  src="img/left-btn-white.svg">
+                </div>
                 <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper service-slider">
                         <div class="swiper-slide">
                             <div class="hocer">
                                 <div class="white-bg"><img class="assets" src="img/white-bg-bulb.svg"> <img
@@ -440,7 +444,8 @@
                 <img class="swiper-button-next portfolio-next" id="right-white-btn" src="img/right_slider-arrow.svg">
                 <img class="swiper-button-next portfolio-next" id="right-grey-btn" src="img/right-btn-grey.svg">
                 <img class="swiper-button-prev portfolio-prev" id="left-grey-btn" src="img/left_arrow-btn.svg">
-                <img class="swiper-button-prev portfolio-prev" id="left-white-btn" src="img/left-btn-white.svg"></div>
+                <img class="swiper-button-prev portfolio-prev" id="left-white-btn" src="img/left-btn-white.svg">
+            </div>
             <div class="trusted">
                 <h2>Trusted By : </h2> <img alt="" src="img/microsoft-icon.svg" class="first-img"> <img alt="" src="img/Unilingo_logo_1_ (4).svg"> <img alt="" src="img/bright-logo.svg"></div>
         </div>
@@ -691,34 +696,5 @@
 <!-- End Footer -->
 <script src="js/javascript.js"></script>
 
-<script>
-    var slider = $('.slider-count');
-    var slideCount = slider.find('.swiper-slide').length;
-    var slideIndex = 0;
-    $('.portfolio-next').on('click', function() {
-        slideIndex++;
-        if (slideIndex >= slideCount-1) {
-            $('#right-grey-btn').show();
-            $('#right-white-btn').hide();
-        }
-        if(slideIndex==1){
-            $('#left-grey-btn').hide();
-            $('#left-white-btn').show();
-        }
-
-    });
-    $('.portfolio-prev').on('click', function() {
-        slideIndex--;
-        if (slideIndex > 0) {
-            $('#right-grey-btn').hide();
-            $('#right-white-btn').show();
-        }
-        if(slideIndex==0){
-            $('#left-grey-btn').show();
-            $('#left-white-btn').hide();
-        }
-    });
-
-</script>
 </body>
 </html>

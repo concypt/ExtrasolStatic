@@ -1226,7 +1226,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .latest-section {
-    background: url(../img/V4.svg);
+    background: url(../img/V4.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-y: 193px;
@@ -2825,6 +2825,7 @@ button#btn1 {
 	padding-top: 63px;
 	transition: 0.5s;
 	height: 574px;
+	margin-bottom: 20px;
 }
 
 .service-content .learn-sec {
@@ -2851,6 +2852,7 @@ button#btn1 {
 	padding-top: 63px;
 	border-radius: 50px 50px 0px 50px;
 	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .p-t {
@@ -2904,7 +2906,8 @@ button#btn1 {
 }
 
 .map-content {
-	margin: 144px;
+	margin-left: 144px;
+	margin-top: 144px;
 	padding-bottom: 192px;
 }
 
@@ -3044,6 +3047,7 @@ button#btn1 {
 	font-size: 30px;
 	line-height: 45px;
 	color: #000000;
+	position: relative;
 }
 
 .digit-content {
@@ -3793,6 +3797,26 @@ button.card-report-btn2 {
 #left-white-btn{
 	display: none;
 }
+#right-gray-service{
+	display: none;
+}
+#left-white-service{
+	display: none;
+}
+.input-form .grid-item button:hover .wave{
+	opacity: 1;
+}
+.input-form .grid-item .wave {
+	position: absolute;
+	top: -3px;
+	left: 8px;
+	width: 102%;
+	height: 104%;
+	overflow: hidden;
+	border-radius: 21px;
+	opacity: 0;
+	transition: 0.5s;
+}
 @media (max-width: 1600px) {
 
 	#menu {
@@ -3878,6 +3902,7 @@ button.card-report-btn2 {
 		background: #19164C;
 		height: 520px;
 		border-radius: 50px 50px 0px 50px;
+		margin-bottom: 30px;
 	}
 
 	.service-content h1 {
@@ -4011,7 +4036,7 @@ button.card-report-btn2 {
 	.service-content {
 		height: 490px;
 		padding-left: 37px;
-		padding-top: 26px;
+		padding-top:65px;
 	}
 
 	.service-content:hover {
@@ -4020,7 +4045,7 @@ button.card-report-btn2 {
 		background: #19164C;
 		height: 490px;
 		padding-left: 37px;
-		padding-top: 26px;
+		padding-top:65px;
 		border-radius: 50px 50px 0px 50px;
 	}
 
@@ -4125,7 +4150,9 @@ button.card-report-btn2 {
 	}
 
 	.map-content {
-		margin: 91px;
+		margin-left: 41px;
+		margin-top: 110px;
+		margin-bottom: 65px;
 		padding-bottom: 0px;
 	}
 
@@ -4137,8 +4164,8 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 287px;
 		height: 67px;
-		margin-right: 127px;
-		margin-left: 127px;
+		margin-right: 325px;
+		margin-left: 325px;
 		margin-top: 32px;
 	}
 
@@ -4149,7 +4176,7 @@ button.card-report-btn2 {
 	}
 
 	.google-map {
-		padding-top: 10px;
+		padding-top: 120px;
 		margin-left: 20px;
 		margin-bottom: -113px;
 	}
@@ -4196,6 +4223,12 @@ button.card-report-btn2 {
 	}
 	.about-us h5 {
 		max-width: 909px;
+	}
+	.map-content h1 {
+		font-size: 94px;
+	}
+	.google-map iframe {
+		height: 650px;
 	}
 }
 
@@ -4416,7 +4449,6 @@ button.card-report-btn2 {
 		background-position-y: 162px;
 		background-size: 429px;
 	}
-
 	.mt img {
 		width: 100%;
 		height: 207.74px;
@@ -4571,6 +4603,10 @@ button.card-report-btn2 {
 	.business-txt h1 {
 		padding-top: 81px;
 	}
+	.map-content h1 {
+		font-size: 82px;
+	}
+
 }
 
 @media (max-width: 991px) {
@@ -4578,6 +4614,7 @@ button.card-report-btn2 {
     .service-header h1 {
         font-size: 44px;
         line-height: 62px;
+		max-width: 600px;
     }
 
 	.proposal .row {
@@ -4827,7 +4864,7 @@ button.card-report-btn2 {
 
 	.slider-bg {
 		background-position-x: 94px;
-		background: url(../img/slider-bg.svg);
+		background: url(../img/slider-bg.png);
 		background-repeat: no-repeat;
 		background-position-y: 80px;
 		padding-right: 10px;
@@ -4941,6 +4978,25 @@ button.card-report-btn2 {
 	.career-about p {
 		padding-top: 27px;
 	}
+	.input-form .grid-item input[type=text] {
+		margin-top: 26px;
+	}
+	.input-form .grid-item input[type=email] {
+		margin-top: 26px;
+	}
+	.input-form .grid-item input[type=email] {
+		margin-top: 26px;
+	}
+	.input-form .grid-item textarea {
+		margin-top: 26px;
+	}
+	.input-form .grid-item button {
+		margin-right: 194px;
+		margin-left: 194px;
+	}
+	.map-content {
+		margin-bottom: 0px;
+	}
 }
 
 @media (max-width: 787px) {
@@ -4948,7 +5004,20 @@ button.card-report-btn2 {
     .header-bg button {
         margin-left: 0px;
     }
-
+	.proposal-form {
+		text-align: center;
+	}
+	.proposal-img {
+		text-align: center;
+	}
+	.proposal-img img {
+		max-width: 577px;
+		margin-top: 75px;
+	}
+	.proposal-form .form-control {
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.report-img img {
 		margin-top: 0;
 	}
@@ -4977,7 +5046,20 @@ button.card-report-btn2 {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-
+	.audit-web-text h1 {
+		font-size: 40px;
+		line-height: 59px;
+		padding-top: 79px;
+		width: 100%;
+		max-width: 522px;
+	}
+	.audit-web-text p {
+		font-size: 22px;
+		line-height: 36px;
+		padding-top: 26px;
+		width: 100%;
+		max-width: 500px;
+	}
 	.card-report {
 		text-align: center;
 	}
@@ -5049,10 +5131,7 @@ button.card-report-btn2 {
 		line-height: 38px;
 		padding-top: 43px;
 	}
-	.open-text p {
-		font-size: 23px;
-		line-height: 43px;
-	}
+
 	.links {
 		padding: 10px;
 	}
@@ -5202,8 +5281,6 @@ button.card-report-btn2 {
 	}
 
 
-
-
 	.trusted h2 {
 		margin-left: 0;
 	}
@@ -5284,7 +5361,8 @@ button.card-report-btn2 {
 	}
 
 	.map-content {
-		margin: 25px;
+		margin-left: 37px;
+		margin-top: 91px;
 	}
 
 	.service-content {
@@ -5319,13 +5397,64 @@ button.card-report-btn2 {
 	}
 	.report-audit h1 {
 		font-weight: 600;
-		font-size: 50px;
-		line-height: 64px;
+		font-size: 45px;
+		line-height: 57px
 	}
 	.report-audit p {
 		font-size: 23px;
 		line-height: 40px;
 	}
+	.work-content h1 {
+		font-size: 43px;
+		line-height: 56px;
+	}
+	.work-content p {
+		font-size: 26px;
+		line-height: 47px;
+		max-width: 600px;
+	}
+	.work-card p {
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 39px;
+		max-width: 700px;
+	}
+	.report-img {
+		width: 100%;
+		max-width: 600px;
+	}
+	.work-details {
+		background-position-x: center;
+		background-position-y: center;
+		padding-top: 36px;
+	}
+	.work-details-three p {
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 60px;
+		margin-top: 40px;
+	}
+	.work-details-four p {
+		font-size: 24px;
+		line-height: 50px;
+	}
+	.input-form .grid-item button {
+		margin-right: 102px;
+		margin-left: 102px;
+	}
+	.open-text h1 {
+		font-size: 41px;
+		line-height: 57px;
+		padding-top: 148px
+	}
+	.open-text p {
+		font-size: 21px;
+		line-height: 38px;
+	}
+	.links-section {
+		margin-top: 106px;
+	}
+
 }
 
 @media (max-width: 530px) {
@@ -5425,7 +5554,13 @@ button.card-report-btn2 {
 
 	.p-text {
 		background-size: contain;
-		height: 474px;
+		height: 531px;
+		background-position-y: center;
+	}
+	.p-text h1 {
+		font-size: 33px;
+		line-height: 42px;
+		padding-top: 136px;
 	}
 
 	.footer-txt .lets-talk button {
@@ -5590,7 +5725,10 @@ button.card-report-btn2 {
 		max-width: 271px;
 	}
 
-
+	.input-form .grid-item button {
+		margin-right: 19px;
+		margin-left: 19px;
+	}
 }
 
 @media (max-width: 420px) {
