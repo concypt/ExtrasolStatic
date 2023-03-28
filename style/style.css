@@ -55,7 +55,100 @@ body {
 	width: 100%;
 	max-width: 250px;
 }
+body {
+	font-family: avenir,sans-serif;
+  }
+  .video_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 610px;
+}
+  .video_wrapper_full {
+	padding-top: 315px;
+  }
+  
+  
+  .videoIframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border-radius: 50px;
+  }
+  
+  .videoPoster {
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	  width: 100%;
+	  height: 100%;
+		background-image:url(/img/about-us-video.jpg);
+		border-radius: 50px;
+		background-size: 100%;
+		border: none;
+		text-indent: -999em;
+		overflow: hidden;
+		opacity: 1;
+		-webkit-transition: opacity 800ms, height 0s;
+		-moz-transition: opacity 800ms, height 0s;
+		transition: opacity 800ms, height 0s;
+		-webkit-transition-delay: 0s, 0s;
+		-moz-transition-delay: 0s, 0s;
+		transition-delay: 0s, 0s;
+  }
+  .videoPoster:hover {
+	cursor: pointer;
+  }
+  .videoPoster:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 136px;
+    height: 136px;
+    margin: -80px 0 0 -69px;
+    /* border: 5px solid #fff; */
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+}
 
+.videoPoster:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 55px;
+    border: -4px solid #FDBC3B;
+	margin: -36px 0 0 -15px;
+	background: url(/img/play-btn.svg);
+	background-repeat: no-repeat;
+    border-bottom: 25px solid transparent;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+}
+  .videoPoster:hover:before,  .videoPoster:focus:before {
+	  border-color: #e5c17b;
+  }
+  .videoPoster:hover:after, .videoPoster:focus:after {
+	border-left-color: #e5c17b;
+  }
+  .videoWrapperActive .videoPoster {
+	opacity: 0;
+	height: 0;
+	-webkit-transition-delay: 0s, 800ms;
+	-moz-transition-delay: 0s, 800ms;
+	transition-delay: 0s, 800ms;
+  }
 ::-webkit-scrollbar {
 	background-color: #b1bac4;
 	width: 15px;
@@ -200,6 +293,8 @@ body {
 .wrap {
 	width: 100%;
 	max-width: 1700px;
+	padding-left: 106px;
+	padding-right: 106px;
 }
 
 .wrap-two {
@@ -238,6 +333,7 @@ li.nav-item {
 nav.navbar.navbar-expand-lg {
 	padding-top: 32px;
 	padding-left: 0;
+	padding-right: 0;
 }
 
 .nav-icons {
@@ -732,12 +828,10 @@ nav.navbar.navbar-expand-lg {
 	width: 100%;
 	max-width: 33px;
 }
-
 .mouse {
-	margin-bottom: 100px;
-	margin-top: -40px;
+    margin-top: 34px;
+    padding-bottom: 26px;
 }
-
 .mouse a {
 	width: 100%;
 	padding-top: 20px;
@@ -818,7 +912,6 @@ nav.navbar.navbar-expand-lg {
 	background: url(../img/Vector.png);
 	background-repeat: no-repeat;
 	background-position-y: 50px;
-	height: 700px;
 }
 
 .header-bg h1 {
@@ -903,11 +996,11 @@ nav.navbar.navbar-expand-lg {
 	background-position-x: 94px;
 	background: url(../img/slider-bg.png);
 	background-repeat: no-repeat;
-	background-position-y: 80px;
-	background-position-x: 121px;
+	background-position-y: 59px;
+	background-position-x: 83px;
 }
 .slider-text{
-	padding-left: 110px;
+	padding-left: 205px;
 }
 .slider-bg h1 {
 	font-weight: 600;
@@ -969,7 +1062,7 @@ nav.navbar.navbar-expand-lg {
 
 .swiper-btn {
 	width: 100%;
-	margin-left: -103px;
+	margin-left: -196px;
 	margin-top: -65px;
 }
 
@@ -1156,7 +1249,7 @@ nav.navbar.navbar-expand-lg {
 	margin-top: 69px;
 	border: none;
 	float: right;
-	margin-right: 121px;
+	margin-right: 187px;
 	margin-bottom: 100px;
 	position: relative;
 }
@@ -1251,10 +1344,10 @@ nav.navbar.navbar-expand-lg {
 }
 
 .phone {
-	margin-bottom: -152px;
-	margin-left: 33px;
-	width: 100%;
-	max-width: 253px;
+    margin-bottom: -152px;
+    margin-left: 27px;
+    width: 100%;
+    max-width: 232px;
 }
 
 .form-img .img-size-two {
@@ -1270,9 +1363,9 @@ nav.navbar.navbar-expand-lg {
 }
 
 .img-text .lapi {
-	margin-top: 106px;
-	width: 100%;
-	max-width: 1227px;
+    margin-top: 106px;
+    width: 100%;
+    max-width: 1153px;
 }
 
 /*protfoli*/
@@ -2286,7 +2379,7 @@ select {
 	height: 60px;
 	width: 100%;
 	max-width: 169px;
-	margin-right: 125px;
+	margin-right: 65px;
 	margin-top: 62px;
 }
 
@@ -2361,9 +2454,7 @@ button#btn1 {
 	max-width: 846px;
 }
 
-.cards {
-	margin: 5%;
-}
+
 
 .for-flex {
 	display: flex;
@@ -3321,7 +3412,7 @@ button#btn1 {
 	float: right;
 	margin-top: 53px;
 	text-align: left;
-	margin-right: 40px;
+	margin-right: 14px;
 }
 
 .video img {
@@ -3334,6 +3425,8 @@ button#btn1 {
 	width: 100%;
 	max-width: 582px;
 	border-radius: 50px;
+	height: 611px;
+
 }
 
 .digital {
@@ -3395,7 +3488,7 @@ button#btn1 {
 }
 
 .for-txt {
-	margin-left: 200px;
+	margin-left: 92px;
 	margin-bottom: 141px;
 }
 
@@ -3816,6 +3909,16 @@ button.card-report-btn2 {
 	.close-icon {
 		right: 46px;
 	}
+	.form-text {
+		margin-top: 240px;
+		margin-left: 147px;
+	}
+	.swiper-btn {
+		margin-left: -105px;
+	}
+	.last-button {
+		margin-right: 115px;
+	}
 	#menu{
 		padding-right: 46px;
 	}
@@ -3853,11 +3956,6 @@ button.card-report-btn2 {
 
 	.cards {
 		margin: 0%;
-	}
-
-	.wrap {
-		width: 100%;
-		max-width: 1450px;
 	}
 
 	.phone {
@@ -3908,7 +4006,7 @@ button.card-report-btn2 {
 
 @media (max-width: 1380px) {
 	.header-img img {
-		margin-left: 140px;
+		margin-left: 169px;
         margin-top: 142px;
 	}
 	.report-img img {
@@ -3929,11 +4027,7 @@ button.card-report-btn2 {
 	.copyright ul li a,.footer-links a {
 		margin-right: 0px;
 	}
-	
-    .mouse {
-        margin-bottom: 100px;
-        margin-top: 2px;
-    }
+
 	.header-bg h1 {
 		margin-top: 80px;
 	}
@@ -4084,7 +4178,10 @@ button.card-report-btn2 {
 		float: none;
 		margin-right: 0;
 	}
-
+	.for-txt {
+		margin-left: 10px;
+		margin-bottom: 141px;
+	}
 	button.card-report-btn2 {
 		margin-top: 131px;
 		margin-bottom: 50px;
@@ -4093,7 +4190,9 @@ button.card-report-btn2 {
 	.report-audit-text {
 		background-size: inherit;
 	}
-
+	.slider-text {
+		padding-left: 61px;
+	}
 	.report-audit p {
 		font-size: 24px;
 		line-height: 48px;
@@ -4112,7 +4211,7 @@ button.card-report-btn2 {
     }
 
     .latest-content {
-		margin-left: 67px;
+		margin-left: 0px;
 	}
 	.work-details-four {
 		padding-top: 30px;
@@ -4123,7 +4222,14 @@ button.card-report-btn2 {
 		padding-top: 84px;
 		padding-bottom: 103px;
 	}
-
+	.wrap {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.navbar-brand img{
+		width: 100%;
+		max-width: 174px;
+	}
 	.map-content {
 		margin: 91px;
 		padding-bottom: 0px;
@@ -4201,15 +4307,6 @@ button.card-report-btn2 {
 
 @media (max-width: 1080px) {
 
-	.mouse {
-		margin-bottom: 100px;
-		margin-top: 36px;
-	}
-
-	.wrap {
-		width: 100%;
-		max-width: 1000px;
-	}
 
 	.report-form {
 		margin-left: auto;
@@ -4264,7 +4361,7 @@ button.card-report-btn2 {
 		font-size: 52px;
 		line-height: 62px;
 		max-width: 539px;
-		margin-top: 110px;
+		margin-top: 73px;
 	}
 
 	.blog-main-txt p {
@@ -4300,10 +4397,9 @@ button.card-report-btn2 {
 	.header-bg {
 		background: url(../img/Vector.png);
 		background-repeat: no-repeat;
-		background-position-y: 130px;
-		height: 700px;
+		background-position-y: 51px;
 		background-size: 478px;
-		background-position-x: 2px;
+		background-position-x: 62px;
 	}
 
 	.header-img img {
@@ -4544,8 +4640,10 @@ button.card-report-btn2 {
 	}
 
 	.buttons {
-		margin-left: -100px;
+		margin-left: -79px;
 		margin-top: 88px;
+		width: 134%;
+		max-width: 461px;
 	}
 
 	.latest-content .report-btn {
@@ -4554,7 +4652,7 @@ button.card-report-btn2 {
 	}
 
 	.header-img img {
-		margin-left: 0px;
+		margin-left: 57px;
 	}
 
 	.slick-slide img {
@@ -4575,10 +4673,74 @@ button.card-report-btn2 {
 
 @media (max-width: 991px) {
 
+	.nav-tabs {
+		border-bottom: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.nav-tabs .first {
+		background-position-x: 29px;
+	}
+	.nav-tabs .second {
+		background-position-x: 29px;
+	}
+	.nav-tabs .third {
+		background-position-x: 29px;
+	}
+	.nav-tabs .fourth {
+		background-position-x: 29px;
+	}
+	.nav-tabs .fifth {
+		background-position-x: 29px;
+	}
+	.col-lg-6.col-md-6.col-sm-12.launch.panel-body {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	/* .spark-card .row {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+		flex-direction: column;
+	} */
+	.launch p {
+		width: 100%;
+		max-width: 739px;
+		margin-top: -30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tab-pane h3 {
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 10px;
+		color: #1D1655;
+		margin-top: -65px;
+		margin-bottom: 61px;
+	}
+	.launch p {
+		margin-bottom: 2rem;
+	}
+	.nav-tabs a {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
     .service-header h1 {
         font-size: 44px;
         line-height: 62px;
     }
+	.buttons {
+		margin-left: 0;
+		margin-top: 88px;
+		width: 100%;
+		max-width: 461px;
+	}
 
 	.proposal .row {
 		display: -ms-flexbox;
@@ -4590,14 +4752,21 @@ button.card-report-btn2 {
 		flex-direction: column;
 		align-items: center;
 	}
-	.slider-text {
-		padding-left: 0px;
+	.footer-txt ul {
+		margin-top: 25px;
 	}
+	.copyright ul li a {
+		font-size: 11px;
+	}
+
 	.swiper-btn {
 		margin-top: 8px;
 	}
 	.p-t {
-		padding-top: 75px;
+		padding-top: 5px;
+	}
+	.footer-txt ul .office{
+		margin-top: 75px;
 	}
 	.trusted .first-img{
 		margin-left: 0;
@@ -4655,7 +4824,6 @@ button.card-report-btn2 {
 	.col-gap {
 		column-gap: 85px;
 		align-items: center;
-		flex-direction: column;
 	}
 
 	.work-details-three {
@@ -4823,6 +4991,7 @@ button.card-report-btn2 {
 
 	.header-bg {
 		background-size: 478px;
+		height: 637px;
 	}
 
 	.slider-bg {
@@ -4836,10 +5005,6 @@ button.card-report-btn2 {
 	.last-button {
 		margin-left: 0;
 		margin-right: 0;
-	}
-
-	.mouse {
-		margin-top: 120px;
 	}
 
 	.tree-bg {
@@ -4955,6 +5120,19 @@ button.card-report-btn2 {
 	.career-main-img img {
 		margin-bottom: 78px;
 	}
+	.video_wrapper {
+		height: 424px;
+	}
+	.for-img img {
+		height: 475px;
+	}
+	.header .blog-header {
+		background-position-y: 0px;
+		background-size: contain;
+	}
+	#menu {
+		width: 200%;
+	}
     .google-map iframe {
         height: 650px;
     }
@@ -4965,6 +5143,13 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 381px;
 		margin: 0 auto;
+	}
+	.wrap {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	.slider-text {
+		padding-left: 0px;
 	}
 	.header .blog-header h1 {
 		font-size: 41px;
@@ -5124,7 +5309,7 @@ button.card-report-btn2 {
 
 
     .img-text h1 {
-        font-size: 33px;
+        font-size: 30px;
         line-height: 42px;
         max-width: 450px;
         width: 100%;
@@ -5194,7 +5379,7 @@ button.card-report-btn2 {
 	.p-text h1 {
 		font-size: 33px;
 		line-height: 42px;
-		padding-top: 200px;
+		padding-top: 191px;
 	}
 
 	.p-text p {
@@ -5209,7 +5394,7 @@ button.card-report-btn2 {
 	}
 
 	.trusted img {
-		margin-left: 20px;
+		margin-left: 8px;
 		margin-top: 17px;
 	}
 
@@ -5246,16 +5431,14 @@ button.card-report-btn2 {
 
 	.form-text {
 		margin-top: 80px;
-		margin-left: 26px;
+		margin-left: 50px;
 	}
-
 	
 	.buttons {
+		margin-left: -55px;
 		margin-top: 106px;
 		display: flex;
 		flex-wrap: nowrap;
-		margin-left: -33px;
-		margin-left: -27px;
 	}
 
 	.buttons button {
@@ -5339,17 +5522,44 @@ button.card-report-btn2 {
 	.slider-bg .slider-btn {
 		margin-top: 5px;
 	}
+	.wrap {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.close-icon {
+		right: 17px;
+	}
+	#menu ul li a {
+		font-size: 35px;
+	}
 	.slider-bg h1 {
 		text-align: center;
 		font-weight: 500;
 		font-size: 37px;
 		line-height: 47px;
 	}
+
+
+	.form-text {
+		margin-top: 80px;
+		margin-left: 16px;
+	}
 	.slider-bg .slider-txt {
 		text-align: center;
 		font-weight: 400;
 		font-size: 23px;
 		line-height: 36px;
+	}
+	.mouse {
+		margin-top: 38px;
+		padding-bottom: 94px;
+	}
+	.for-resp {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.phone-icon img {
+		margin-right: 16px;
 	}
 	.slider-bg {
 		padding-top: 145px;
@@ -5361,9 +5571,7 @@ button.card-report-btn2 {
 		padding-right: 10px;
 		text-align: center;
 	}
-	#menu {
-		width: 200%;
-	}
+
 	.report-audit-text {
 		background-size: contain;
 	}
@@ -5425,7 +5633,8 @@ button.card-report-btn2 {
 
 	.p-text {
 		background-size: contain;
-		height: 474px;
+		height: 504px;
+		background-position-y: 60px;
 	}
 
 	.footer-txt .lets-talk button {
@@ -5440,8 +5649,7 @@ button.card-report-btn2 {
 		margin-top: 106px;
 		display: flex;
 		flex-wrap: nowrap;
-		margin-left: -33px;
-		margin-left: -27px;
+		margin-left: -10px;
 	}
 	.proposal-btn {
 		width: 100%;
@@ -5463,7 +5671,7 @@ button.card-report-btn2 {
 	}
 
 	.latest-content h1 {
-		font-size: 60px;
+		font-size: 50px;
 		color: #000;
 	}
 
@@ -5504,11 +5712,6 @@ button.card-report-btn2 {
 
 	.latest-section {
 		background-size: contain;
-	}
-
-	.latest-content h1 {
-		margin-top: 61px;
-		margin-left: 10px;
 	}
 
 	.latest-section {
@@ -5597,6 +5800,18 @@ button.card-report-btn2 {
     .img-text .lapi {
         margin-top: 77px;
     }
+	.for-resp img{
+		width: 100%;
+		max-width: 26px;
+	}
+	.location-icon img {
+		max-width: 15px;
+		margin-right: 10px;
+	}
+	
+	.phone-icon img {
+		max-width: 20px;
+	}
 	.contact {
 		background-size: contain;
 	}
@@ -5609,8 +5824,13 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 269px;
 	}
+	.close-icon {
+		right: 17px;
+		width: 100%;
+		max-width: 18px;
+	}
     .mouse {
-        margin-bottom: 60px;
+        padding-bottom: 60px;
     }
     .report-audit p {
         font-size: 19px;
@@ -5678,9 +5898,8 @@ button.card-report-btn2 {
 	.report-btn {
 		max-width: 285px;
 		margin-top: 15px;
+		font-size: 14px;
 	}
-
-
 
 	.form-text {
 		margin-left: 9px;

@@ -114,9 +114,10 @@
         <div class="videos">
             <div class="row">
                 <div class="col-lg-7 video">
-                    <a href="https://youtu.be/MAgTSaJQzbA" target="_blank">
-                        <img alt="" src="img/about-us-video.jpg">
-                    </a>
+                    <div class="video_wrapper video_wrapper_full js-videoWrapper">
+                        <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/MAgTSaJQzbA"></iframe>
+                        <button class="videoPoster js-videoPoster"></button>
+                        </div>
                     <p>Since 2015, we have been going beyond being “just a web design company” and worked with our
                         clients as their digital partners. Our clients come to us when they want to craft websites that
                         will build their brand, as well as increase traffic and conversion. Our business acumen,
@@ -339,5 +340,27 @@
 <script src="http://flaviusmatis.github.io/simplePagination.js"></script>
 <!-- End Footer -->
 <script src="js/javascript.js"></script>
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+<script>
+    $(document).on('click','.js-videoPoster',function(e) {
+  //отменяем стандартное действие button
+  e.preventDefault();
+  var poster = $(this);
+  // ищем родителя ближайшего по классу
+  var wrapper = poster.closest('.js-videoWrapper');
+  videoPlay(wrapper);
+});
+
+//вопроизводим видео, при этом скрывая постер
+function videoPlay(wrapper) {
+  var iframe = wrapper.find('.js-videoIframe');
+  // Берем ссылку видео из data
+  var src = iframe.data('src');
+  // скрываем постер
+  wrapper.addClass('videoWrapperActive');
+  // подставляем в src параметр из data
+  iframe.attr('src',src);
+}
+</script>
 </body>
 </html>
