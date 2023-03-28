@@ -87,7 +87,7 @@ body {
 	  left: 0px;
 	  width: 100%;
 	  height: 100%;
-		background-image:url(/img/about-us-video.jpg);
+		background-image:url(../img/about-us-video.jpg);
 		border-radius: 50px;
 		background-size: 100%;
 		border: none;
@@ -129,7 +129,7 @@ body {
     height: 55px;
     border: -4px solid #FDBC3B;
 	margin: -36px 0 0 -15px;
-	background: url(/img/play-btn.svg);
+	background: url(../img/play-btn.svg);
 	background-repeat: no-repeat;
     border-bottom: 25px solid transparent;
     -webkit-transition: border-color 300ms;
@@ -1249,7 +1249,7 @@ nav.navbar.navbar-expand-lg {
 	margin-top: 69px;
 	border: none;
 	float: right;
-	margin-right: 187px;
+	margin-right: 216px;
 	margin-bottom: 100px;
 	position: relative;
 }
@@ -2911,8 +2911,8 @@ button#btn1 {
 .service-content {
 	width: 100%;
 	max-width: 522px;
-	padding-left: 63px;
-	padding-right: 63px;
+	padding-left: 35px;
+	padding-right: 35px;
 	padding-top: 63px;
 	transition: 0.5s;
 	height: 574px;
@@ -2939,7 +2939,8 @@ button#btn1 {
 	max-width: 522px;
 	background: #19164C;
 	height: 574px;
-	padding-left: 63px;
+	padding-left: 35px;
+	padding-left: 35px;
 	padding-top: 63px;
 	border-radius: 50px 50px 0px 50px;
 	padding-bottom: 20px;
@@ -2997,7 +2998,7 @@ button#btn1 {
 }
 
 .map-content {
-	margin-left: 144px;
+	margin-left: 213px;
 	margin-top: 144px;
 	padding-bottom: 192px;
 }
@@ -3153,7 +3154,6 @@ button#btn1 {
 
 .work-content {
 	padding-top: 85px;
-	padding-left: 50px;
 }
 
 .all-card {
@@ -3194,7 +3194,6 @@ button#btn1 {
 	color: #19164C;
 	margin-top: 49px;
     text-align: left;
-    margin-left: 45px;
 	margin-bottom: 0;
 }
 
@@ -3207,7 +3206,6 @@ button#btn1 {
 	width: 100%;
 	max-width: 738px;
     text-align: left;
-    margin-left: 45px;
 }
 
 .load-btn {
@@ -3332,11 +3330,29 @@ button#btn1 {
 	color: #FFFFFF;
 	width: 100%;
 	max-width: 219px;
+	height: 46px;
 	border: none;
 	background: #19164C;
-	border-radius: 20px;
+	border-radius: 23px;
 	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
+.work-details-three button:hover .wave{
+	opacity: 1;
+}
+.work-details-three  .wave {
+	top: -1px;
+	left: 6px;
+	width: 103%;
+	height: 104%;
+}
+.work-details-three button img{
+	margin-right: 8px;
+}
+
 
 .work-details-four {
 	padding-top: 208px;
@@ -3397,7 +3413,6 @@ button#btn1 {
 	width: 100%;
 	max-width: 1139px;
 	padding-top: 75px;
-	margin-left: 34px;
 	overflow-x: hidden;
 }
 
@@ -3687,6 +3702,9 @@ button#btn1 {
 button a {
 	color: #000;
 	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 26px;
 }
 
 button a:hover {
@@ -3911,7 +3929,9 @@ button.card-report-btn2 {
 	transition: 0.5s;
 }
 @media (max-width: 1600px) {
-
+	.map-content {
+		margin-left: 113px;
+	}
 	#menu {
 		width: 62%;
 		overflow-y: scroll;
@@ -4032,12 +4052,14 @@ button.card-report-btn2 {
 @media (max-width: 1380px) {
 	.header-img img {
 		margin-left: 169px;
-        margin-top: 142px;
+		margin-top: 142px;
 	}
+
 	.report-img img {
 		width: 100%;
 		margin-top: 64px;
 	}
+
 	button.card-report-btn2 {
 		margin-top: 102px;
 	}
@@ -4048,8 +4070,8 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 571px;
 	}
-	
-	.copyright ul li a,.footer-links a {
+
+	.copyright ul li a, .footer-links a {
 		margin-right: 0px;
 	}
 
@@ -4060,9 +4082,11 @@ button.card-report-btn2 {
 	.plan-audit-card li {
 		margin-left: 0;
 	}
+
 	.plan-audit-card button {
 		margin-left: 0;
 	}
+
 	.nav-icons li.nav-item {
 		margin-left: 0px;
 	}
@@ -4070,7 +4094,7 @@ button.card-report-btn2 {
 	.video p {
 		margin-right: 0px;
 	}
-	
+
 	.img2 {
 		display: none;
 	}
@@ -4100,27 +4124,30 @@ button.card-report-btn2 {
 	.proposal-form input[type=email] {
 		margin-left: 0px;
 	}
-    .service-content{
-        height: 560px;
-        padding-left: 37px;
-        padding-top: 26px;
-    }
-    .service-content:hover {
-        width: 100%;
-        max-width: 522px;
-        background: #19164C;
-        height: 560px;
-        padding-left: 37px;
-        padding-top: 26px;
-        border-radius: 50px 50px 0px 50px;
-    }
-    .service-content h1 {
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 31px;
-        color: #1D1655;
-        padding-top: 34px;
-    }
+
+	.service-content {
+		height: 560px;
+		padding-left: 37px;
+		padding-top: 26px;
+	}
+
+	.service-content:hover {
+		width: 100%;
+		max-width: 522px;
+		background: #19164C;
+		height: 560px;
+		padding-left: 37px;
+		padding-top: 26px;
+		border-radius: 50px 50px 0px 50px;
+	}
+
+	.service-content h1 {
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 31px;
+		color: #1D1655;
+		padding-top: 34px;
+	}
 
 
 	.proposal-form input[type=text] {
@@ -4130,7 +4157,7 @@ button.card-report-btn2 {
 	.service-content {
 		height: 490px;
 		padding-left: 37px;
-		padding-top:65px;
+		padding-top: 65px;
 	}
 
 	.service-content:hover {
@@ -4139,7 +4166,7 @@ button.card-report-btn2 {
 		background: #19164C;
 		height: 490px;
 		padding-left: 37px;
-		padding-top:65px;
+		padding-top: 65px;
 		border-radius: 50px 50px 0px 50px;
 	}
 
@@ -4176,6 +4203,7 @@ button.card-report-btn2 {
 		width: 100%;
 		max-width: 187px;
 	}
+
 	.input-form .grid-container {
 		display: grid;
 		grid-template-columns: auto auto;
@@ -4183,14 +4211,106 @@ button.card-report-btn2 {
 		max-width: unset;
 		text-align: center;
 	}
+
 	.form-details h1 {
 		text-align: center;
 	}
+
 	.form-details {
 		padding-top: 203px;
-	    padding-left: 5px; 
+		padding-left: 5px;
 		padding-bottom: 69px;
 	}
+
+	.work-content h1 {
+		font-size: 46px;
+		line-height: 46px;
+	}
+	.work-content p {
+		font-size: 27px;
+		line-height: 48px;
+		max-width: 800px;
+	}
+	.work-card p {
+		font-size: 27px;
+		line-height: 41px;
+	}
+	.service-content .service-icone1{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone1 {
+		max-width: 94px;
+	}
+	.service-content .service-icone2{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone2 {
+		max-width: 94px;
+	}
+	.service-content .service-icone3{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone3 {
+		max-width: 94px;
+	}
+	.service-content .service-icone4{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone4 {
+		max-width: 94px;
+	}
+	.service-content .service-icone5{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone5 {
+		max-width: 94px;
+	}
+	.service-content .service-icone6{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone6 {
+		max-width: 94px;
+	}
+	.service-content .service-icone7{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone7 {
+		max-width: 94px;
+	}
+	.service-content .service-icone8{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone8 {
+		max-width: 94px;
+	}
+	.service-content .service-icone9{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone9 {
+		max-width: 94px;
+	}
+	.service-content .service-icone10{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone10 {
+		max-width: 94px;
+	}
+	.service-content:hover .service-icone10 {
+		max-width: 94px;
+	}
+	.service-content .service-icone11{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone11 {
+		max-width: 94px;
+	}
+	.service-content .service-icone12{
+		max-width: 94px;
+	}
+	.service-content:hover .service-bg-icone12 {
+		max-width: 94px;
+	}
+
 }
 
 @media (max-width: 1280px) {
@@ -4800,7 +4920,7 @@ button.card-report-btn2 {
 		margin-top: 8px;
 	}
 	.p-t {
-		padding-top: 5px;
+		padding-top: 35px;
 	}
 	.footer-txt ul .office{
 		margin-top: 75px;
@@ -5162,103 +5282,168 @@ button.card-report-btn2 {
 	.map-content {
 		margin-bottom: 0px;
 	}
+	.work-card p {
+		font-size: 22px;
+		line-height: 33px;
+	}
 }
 
 @media (max-width: 787px) {
 
-    .header-bg button {
-        margin-left: 0px;
-    }
+	.header-bg button {
+		margin-left: 0px;
+	}
+
 	.proposal-form {
 		text-align: center;
 	}
+
 	.proposal-img {
 		text-align: center;
 	}
+
 	.proposal-img img {
 		max-width: 577px;
-		margin-top: 75px;
 	}
+
 	.proposal-form .form-control {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.report-img img {
 		margin-top: 0;
 	}
+
 	.career-main-img img {
 		margin-bottom: 78px;
 	}
+
 	.video_wrapper {
 		height: 424px;
 	}
+
 	.for-img img {
 		height: 475px;
 	}
+
 	.header .blog-header {
 		background-position-y: 0px;
 		background-size: contain;
 	}
+
 	#menu {
 		width: 200%;
 	}
-    .google-map iframe {
-        height: 650px;
-    }
+
+	.google-map iframe {
+		height: 650px;
+	}
+
 	.img-text .lapi {
 		margin-top: 91px;
 	}
+
 	.plan-audit-card li {
 		width: 100%;
 		max-width: 381px;
 		margin: 0 auto;
 	}
+
 	.wrap {
 		padding-left: 35px;
 		padding-right: 35px;
 	}
+
 	.slider-text {
 		padding-left: 0px;
 	}
+
 	.header .blog-header h1 {
 		font-size: 41px;
 	}
+
 	.slider-swiper {
 		padding-left: 0px;
 		padding-top: 50px;
 	}
+
 	.report-form {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
+
 	.audit-web-text h1 {
-		font-size: 40px;
-		line-height: 59px;
-		padding-top: 79px;
+		font-size: 36px;
+		line-height: 45px;
+		padding-top: 65px;
 		width: 100%;
 		max-width: 522px;
 	}
-	.audit-web-text p {
+
+	.audit-web-text li {
 		font-size: 22px;
-		line-height: 36px;
-		padding-top: 26px;
+		line-height: 60px;
+	}
+
+	.audit-web-text p {
+		font-size: 20px;
+		line-height: 30px;
+		padding-top: 20px;
 		width: 100%;
 		max-width: 500px;
 	}
-	.card-report {
+
+	.audit-web-text ul li::before {
+		width: 50px;
+		height: 50px;
+	}
+
+	.plan-audit h1 {
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 41px;
+	}
+
+	.plan-audit-card h1 {
+		font-weight: 600;
+		font-size: 39px;
+		line-height: 44px;
+	}
+
+	.plan-audit-card li {
+		font-size: 21px;
+	}
+
+	.plan-audit-card button {
+		max-width: 328px;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 31px;
+	}
+
+	.plan-audit-card {
+		padding-bottom: 103px;
+	}
+
+	.btn-center {
 		text-align: center;
 	}
+
 	.location-icon img {
 		max-width: 19px;
-	    margin-right: 10px;
+		margin-right: 10px;
 	}
+
 	.plan-audit-card button {
 		margin-top: 50px;
 		margin-bottom: 65px;
 	}
+
 	.business-img h6 {
 		padding-bottom: 25px;
 	}
+
 	.form-text h1 {
 		width: 100%;
 		max-width: 183px;
@@ -5268,10 +5453,12 @@ button.card-report-btn2 {
 		margin-top: 70px;
 		margin-bottom: 0;
 	}
+
 	.slider-bg .slider-txt {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
 	.peoples {
 		margin-top: -16px;
 	}
@@ -5286,23 +5473,27 @@ button.card-report-btn2 {
 		padding-right: 10px;
 		text-align: center;
 	}
+
 	.footer-links {
 		margin-top: 16px;
 	}
 
-	.header br{
+	.header br {
 		display: block;
 	}
 
 	.copyright {
 		flex-direction: column;
 	}
+
 	.copyright ul li a {
 		font-size: 11px;
 	}
+
 	.copyright ul {
 		margin-left: 30px;
 	}
+
 	.close-icon {
 		top: 36px;
 	}
@@ -5311,6 +5502,7 @@ button.card-report-btn2 {
 	.career-main-img {
 		margin-top: 18px;
 	}
+
 	.career-about-txt h5 {
 		font-size: 21px;
 		line-height: 38px;
@@ -5320,17 +5512,21 @@ button.card-report-btn2 {
 	.links {
 		padding: 10px;
 	}
+
 	.open-texts {
 		background-size: contain;
 	}
+
 	.links h1 {
 		font-size: 30px;
 		line-height: 35px;
 	}
+
 	.links a {
 		font-size: 25px;
 		line-height: 43px;
 	}
+
 	.portfolio-btn {
 		display: none;
 	}
@@ -5378,6 +5574,7 @@ button.card-report-btn2 {
 	.blog-details-about .spark-img img {
 		padding-bottom: 35px;
 	}
+
 	.slider-bg h1 {
 		text-align: center;
 		font-weight: 500;
@@ -5387,15 +5584,15 @@ button.card-report-btn2 {
 	}
 
 
-    .img-text h1 {
-        font-size: 30px;
-        line-height: 42px;
-        max-width: 450px;
-        width: 100%;
-        /* margin-top: 173px; */
-    }
+	.img-text h1 {
+		font-size: 30px;
+		line-height: 42px;
+		max-width: 450px;
+		width: 100%;
+		/* margin-top: 173px; */
+	}
 
-    .img-text p {
+	.img-text p {
 		margin-top: 22px;
 		width: 100%;
 		max-width: 422px;
@@ -5412,7 +5609,6 @@ button.card-report-btn2 {
 		display: block;
 		margin-left: 23px;
 	}
-
 
 
 	.header-bg h1 {
@@ -5447,7 +5643,7 @@ button.card-report-btn2 {
 	.img-text h1 {
 		font-size: 33px;
 		line-height: 42px;
-        /* margin-top: 173px; */;
+		/* margin-top: 173px; */;
 	}
 
 	.img-text p {
@@ -5510,7 +5706,7 @@ button.card-report-btn2 {
 		margin-top: 80px;
 		margin-left: 50px;
 	}
-	
+
 	.buttons {
 		margin-left: -55px;
 		margin-top: 106px;
@@ -5578,65 +5774,150 @@ button.card-report-btn2 {
 		height: 100%;
 		width: 100%;
 	}
+
 	.report-audit h1 {
 		font-weight: 600;
 		font-size: 45px;
 		line-height: 57px
 	}
+
 	.report-audit p {
 		font-size: 23px;
 		line-height: 40px;
 	}
+
 	.work-content h1 {
 		font-size: 43px;
 		line-height: 56px;
 	}
+
 	.work-content p {
 		font-size: 26px;
 		line-height: 47px;
 		max-width: 600px;
 	}
+
 	.work-card p {
-		font-weight: 400;
-		font-size: 25px;
-		line-height: 39px;
 		max-width: 700px;
 	}
+
 	.report-img {
 		width: 100%;
 		max-width: 600px;
 	}
+
 	.work-details {
 		background-position-x: center;
 		background-position-y: center;
 		padding-top: 36px;
 	}
+
 	.work-details-three p {
 		font-weight: 400;
 		font-size: 38px;
 		line-height: 60px;
 		margin-top: 40px;
 	}
+
 	.work-details-four p {
 		font-size: 24px;
 		line-height: 50px;
 	}
+
 	.input-form .grid-item button {
 		margin-right: 102px;
 		margin-left: 102px;
 	}
+
 	.open-text h1 {
 		font-size: 41px;
 		line-height: 57px;
 		padding-top: 148px
 	}
+
 	.open-text p {
 		font-size: 21px;
 		line-height: 38px;
 	}
+
 	.links-section {
 		margin-top: 106px;
 	}
+
+	.work-img img {
+		border-radius: 14px;
+	}
+
+	.input-form .grid-item button {
+		width: 100%;
+		max-width: 247px;
+		height: 57px;
+		font-size: 25px;
+		line-height: 32px;
+	}
+
+	.map-content h1 {
+		font-size: 70px;
+	}
+
+	.contact-details {
+		padding-top: 12px;
+	}
+
+	.google-map {
+		padding-top: 68px;
+	}
+
+	.contact-details span {
+		font-size: 20px;
+		line-height: 21px;
+	}
+
+	.contact-details p {
+		font-size: 24px;
+		line-height: 39px;
+	}
+
+	.form-details h1 {
+		font-size: 52px;
+		line-height: 62px;
+	}
+
+	.input-form .grid-item input[type=text] {
+		max-width: 535px;
+		margin-top: 26px;
+		height: 65px;
+	}
+
+	.input-form .grid-item input[type=email] {
+		max-width: 535px;
+		margin-top: 26px;
+		height: 65px;
+	}
+
+	.input-form .grid-item textarea {
+		max-width: 535px;
+		margin-top: 26px;
+		height: 225px;
+		border-radius: 36px;
+	}
+
+	.report-audit-text {
+		background-size: contain;
+	}
+
+	.proposal-text h1 {
+		font-size: 48px;
+		line-height: 55px;
+		padding-top: 155px;
+	}
+
+	.proposal-text p {
+		font-size: 21px;
+		line-height: 30px;
+		max-width: 600px;
+	}
+
 
 }
 
@@ -5931,7 +6212,53 @@ button.card-report-btn2 {
 		margin-right: 19px;
 		margin-left: 19px;
 	}
-}
+	.work-card p {
+		font-size: 16px;
+		line-height: 28px;
+	}
+	.work-content p {
+		font-size: 16px;
+		line-height: 36px;
+	}
+	.work-content h1 {
+		font-size: 35px;
+		line-height: 47px;
+	}
+	.work-details-four p {
+		font-size: 22px;
+		line-height: 43px;
+	}
+	.work-details-three p {
+		font-size: 20px;
+		line-height: 36px;
+		margin-top: 17px;
+	}
+	.work-details-three button {
+		margin-top: 5px;
+	}
+	.work-details-three {
+		padding-top: 64px;
+		padding-bottom: 11px;
+	}
+	.work-details-four {
+		padding-bottom: 55px;
+	}
+	.work-img img {
+		border-radius: 12px;
+	}
+	.report-audit h1 {
+		font-size: 36px;
+		line-height: 51px;
+	}
+	.report-audit p {
+		font-size: 20px;
+		line-height: 37px;
+	}
+	.report-audit-text {
+		height: 677px;
+	}
+
+	}
 
 @media (max-width: 420px) {
     .img-text .lapi {
@@ -6068,6 +6395,9 @@ button.card-report-btn2 {
 		margin-right: 81px;
 		margin-left: 81px;
 		margin-top: 32px;
+	}
+	.contact {
+		padding-bottom: 15px;
 	}
 }
 

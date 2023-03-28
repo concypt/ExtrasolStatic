@@ -59,7 +59,7 @@ var serviceIndex = 0;
 $('.swiper-button-new-next').on('click', function() {
     serviceIndex++;
     console.log(slideCountTotal,serviceIndex)
-    if (serviceIndex >= slideCountTotal-5) {
+    if (serviceIndex >= slideCountTotal-3) {
         $('#right-gray-service').show();
         $('#right-white-service').hide();
     }
