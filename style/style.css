@@ -28,7 +28,8 @@
   
   }
 
-  .row {
+  .report-section .row,
+  .map .row {
     margin-left: 0;
     margin-right: 0;
   }
