@@ -115,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-7 video">
                     <div class="video_wrapper video_wrapper_full js-videoWrapper">
-                        <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/MAgTSaJQzbA"></iframe>
+                        <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/MAgTSaJQzbA"&autoplay=1></iframe>
                         <button class="videoPoster js-videoPoster"></button>
                         </div>
                     <p>Since 2015, we have been going beyond being “just a web design company” and worked with our
@@ -343,23 +343,23 @@
 <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 <script>
     $(document).on('click','.js-videoPoster',function(e) {
-  //отменяем стандартное действие button
+  //cancel the default action button
   e.preventDefault();
   var poster = $(this);
-  // ищем родителя ближайшего по классу
+  //looking for a parent closest in class
   var wrapper = poster.closest('.js-videoWrapper');
   videoPlay(wrapper);
 });
 
-//вопроизводим видео, при этом скрывая постер
+//play the video while hiding the poster
 function videoPlay(wrapper) {
   var iframe = wrapper.find('.js-videoIframe');
-  // Берем ссылку видео из data
+  // We take the video link from data
   var src = iframe.data('src');
-  // скрываем постер
+  // hide the poster
   wrapper.addClass('videoWrapperActive');
-  // подставляем в src параметр из data
-  iframe.attr('src',src);
+  // we substitute the parameter from data into src
+  iframe.attr('src', src);
 }
 </script>
 </body>
