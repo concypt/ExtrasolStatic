@@ -23,10 +23,6 @@
     color: #000;
   }
 
-  textarea::placeholder {
-    color: #000;
-  }
-
   input:focus,
   select:focus,
   select,
@@ -60,11 +56,7 @@
     width: 100%;
     max-width: 1470px;
   }
-
-  a:hover {
-    text-decoration: none;
-  }
-
+  
   .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 1.35;
     cursor: auto;
@@ -1379,7 +1371,7 @@
     max-width: 365px;
     border-radius: 20px;
   }
-
+  
   .form-img .img-size-one {
     width: 100%;
     max-width: 100%;
@@ -1387,11 +1379,11 @@
     height: 206px;
     object-fit: cover;
   }
-
+  
   .img-text .lapi {
     margin-top: 106px;
     width: 100%;
-    max-width: 1153px;
+    max-width: 1160px;
   }
   
   /*protfoli*/
@@ -1659,26 +1651,35 @@
     max-width: 1916px;
     height: 100%;
   }
+
+  .swiper-wrapper-content {
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .swiper-wrapper-content .swiper-wrapper {
+    margin: 0 auto;
+  }
   
   .mySwiper-two .swiper-slide {
     font-size: 18px;
     background: #fff;
-    padding: 0 107px;
+    padding: 60px 107px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 44px;
     min-height: 436px;
     height: auto;
-    padding-bottom: 20px;
   }
   
   .swiper-two {
     max-width: 1010px;
     height: 100%;
     width: 100%;
+    margin: 0 auto;
   }
   
   .p-logo {
-    margin-top: 55px;
     display: flex;
     width: 100%;
     max-width: 140px;
@@ -1725,12 +1726,14 @@
   img#left-grey-btn {
     position: absolute;
     z-index: 1;
+    left: -90px;
   }
 
   img#right-white-btn,
   img#right-grey-btn {
     position: absolute;
     z-index: 1;
+    right: -90px
   }
   
   .portfolio-btn {
@@ -2500,7 +2503,8 @@
     padding: 0;
   }
   
-  .blog-main img{
+  .blog-main {
+    background-image: url(../img/blog-main.jpg);
     border-radius: 50px 0px 0px 50px;
     width: 100%;
     max-width: 846px;
@@ -2544,7 +2548,19 @@
     max-width: 586px;
   }
   
-  .card-1 img, .card-2 img, .card-3 img{
+  .card-1 img{
+    height: 423px;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+  }
+  
+  .card-2 img{
+    height: 423px;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+  }
+  
+  .card-3 img{
     height: 423px;
     border-radius: 50px 50px 0px 0px;
     width: 100%;
@@ -2632,7 +2648,7 @@
   .card-hover img {
     object-fit: cover;
   }
-
+  
   .card-hover:hover h5 {
     color: #FDBC3B;
   }
@@ -2650,7 +2666,12 @@
     color: #fff;
   }
   
-  .two-cards .card-1 img, .two-cards .card-2 img {
+  .two-cards .card-1 img{
+    height: 600px;
+    width: 100%;
+  }
+  
+  .two-cards .card-2 img{
     height: 600px;
     width: 100%;
   }
@@ -3210,15 +3231,13 @@
   .work-card {
     margin-top: 60px;
   }
-
+  
   .work-card img {
     width: 100%;
     max-width: 734px;
     border-radius: 50px;
-    object-fit: cover;
-    transition: 0.5s;
   }
-
+  
   .work-card h1 {
     font-weight: 600;
     font-size: 25px;
@@ -4111,10 +4130,7 @@
     .cards {
       margin: 0%;
     }
-    .phone {
-      display: none;
-    }
-
+  
     li.nav-item.active {
       margin-left: 0px;
     }
@@ -4618,6 +4634,15 @@
     .google-map iframe {
       min-height: 800px;
     }
+
+    .swiper-two {
+      max-width: 850px;
+    }
+
+    .mySwiper-two .swiper-slide {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
   
   }
   
@@ -5051,12 +5076,6 @@
       max-width: 556px;
       margin: 0 auto;
     }
-
-    .two-cards .card-1 img, .two-cards .card-2 img {
-      height: 451px;
-      width: 100%;
-    }
-
     .nav-tabs {
       border-bottom: none;
       display: flex;
@@ -5142,10 +5161,10 @@
       flex-direction: column;
     }
   
-    .blog-main img{
+    .blog-main {
       border-radius: 50px 50px 0px 0px;
-      max-width: 100%;
-      height: 444px;
+      max-width: 684px;
+      height: 400px;
     }
   
     .blog-main-txt p {
@@ -5749,11 +5768,7 @@
       padding-top: 26px;
       padding-left: 30px;
     }
-
-    .blog-main img {
-      max-width: 100%;
-    }
-
+  
     .blog-main-txt h1 {
       font-size: 25px;
       line-height: 32px;
@@ -5921,7 +5936,7 @@
     }
   
     .business-img h6 {
-      padding-bottom: 25px;
+      padding-bottom: 60px;
     }
   
     .form-text h1 {
@@ -6243,9 +6258,9 @@
     }
   
     .swiper-two {
-      max-width: 615px;
+      max-width: 550px;
       height: 100%;
-      width: 100%;
+      width: 90%;
     }
   
     .report-audit h1 {
@@ -6390,11 +6405,21 @@
       line-height: 30px;
       max-width: 600px;
     }
+
+    .swiper-wrapper-content {
+      width: 100%;
+    }
+    
   }
   
   @media (max-width:576px) {
     .nav-bg .wrap {
       padding-right: 30px;
+    }
+
+    .mySwiper-two .swiper-slide {
+      padding-right: 30px;
+      width: 90%;
     }
 
     a.nav-link.for-resp img {
@@ -6412,10 +6437,6 @@
 
     button.card-report-btn2 {
       margin-top: 40px;
-    }
-
-    .blog-main img {
-      height: 320px;
     }
 
     .card-report {
@@ -6491,10 +6512,6 @@
     .spark-card-1 img {
       height: auto;
       min-height: 300px;
-    }
-
-    .swiper-two {
-      max-width: 472px;
     }
   
     .service-header {
@@ -6718,7 +6735,7 @@
     }
   
     .swiper-two {
-      max-width: 436px;
+      max-width: 480px;
     }
   
     .report-form {
