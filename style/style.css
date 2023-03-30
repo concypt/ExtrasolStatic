@@ -80,10 +80,6 @@
     font-family: avenir, sans-serif;
   }
   
-  ::selection {
-    background: rgb(36 167 119 / 25%);
-  }
-  
   .video_wrapper {
     width: 100%;
     margin: 0 auto;

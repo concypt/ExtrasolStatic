@@ -66,7 +66,7 @@ var serviceIndex = 0;
 $('.swiper-button-new-next').on('click', function() {
     serviceIndex++;
     //console.log(slideCountTotal,serviceIndex)
-    if (serviceIndex >= slideCountTotal-1) {
+    if (serviceIndex >= slideCountTotal-3) {
         $('#right-gray-service').show();
         $('#right-white-service').hide();
     }
@@ -230,27 +230,23 @@ $(document).ready(function() {
                     spaceBetween: 20,
                 },
                 420: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                520: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 1.2,
                     spaceBetween: 20,
                 },
                 640: {
-                    slidesPerView: 1.5,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 1024: {
-                    slidesPerView: 2.5,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 },
                 1280: {
-                    slidesPerView: 3.5,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 },
                 1380: {
