@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
+        <!-- extrasol-favicon -->
+        <link rel="icon" type="image/x-icon" href="img/extrasol-favicon.png">
         <!-- Swiper library -->
         <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet"/>
         <!-- jQuery library -->
@@ -20,7 +22,7 @@
 <body  data-spy="scroll" data-target="#myScrollspy" data-offset="1000">
     <div class="cursor"></div>
 <!-- Start Nav Bar-->
-<section class="nav-bg">
+<section class="nav-bg" id="extrasol-navbar">
     <div class="container-fluid wrap">
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html"><img src="img/nav-logo .svg"></a>
@@ -334,7 +336,7 @@
                     <h1>We help business leaders build brands that grow and thrive.</h1>
                     <p>Our focused approach means that you get everything you need to grow your business.</p>
                 </div>
-                <div class="swiper mySwiper-two swiper-two">
+                <div class="swiper mySwiper-two swiper-two" id="swiper-two">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img class="p-logo" src="img/Unilingo_logo_1_ (2).svg">
                             <div><img class="p-stars" src="img/rating.svg"> <img class="p-stars" src="img/rating.svg"> <img
@@ -478,74 +480,65 @@
     <!-- End Report Section -->
     <!-- Start latest Section -->
     <section class="latest-sec">
-        <div class="container-fluid wrap">
-            <div class="row latest-section">
-                <div class="col-lg-6 col-md-8 col-sm-12">
-                    <div class="latest-content">
-                        <h3>News & insights</h3>
-                        <h1>Latest <br> Insights <br> & opinion </h1>
-                        <button class="report-btn report-btn-two"><a href="blog.html">View all news & insights <img
-                                src="img/arow.svg">
-                            <div class="wave"></div>
-                        </a></button>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-8 col-sm-12 form-img">
-                    <div class="row p-b">
-                        <div class="col-lg-6 col-md-12 mt img1">
-                            <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 304 1.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt img2">
-                            <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 304.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt">
-                            <a href="blog-detail.html">
-                                <div class="next-pag">
-                                    <h4>21st November 2022</h4>
-                                    <p>Bidding on competitor’s
-                                        <br> brands</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt img1">
-                            <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 305 1.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt img2">
-                            <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 305.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt">
-                            <a href="blog-detail.html">
-                                <div class="next-pag">
-                                    <h4>11th November 2022</h4>
-                                    <p>World events & search
-                                        <br> behaviouus</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt img1">
-                            <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 306 1.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt img2 content-hide">
-                            <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 306.jpg"></a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mt content-hide">
-                            <a href="blog-detail.html">
-                                <div class="next-pag">
-                                    <h4>27th November 2022</h4>
-                                    <p>SEO quick wins &
-                                        <br> mistakes</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="latest-content latest-content-two">
-                            <button class="report-btn report-btn-three"> View all NEWS & INSIGHTS <img
-                                                                                                       src="img/arow.svg">
+            <div class="container-fluid wrap">
+                <div class="row latest-section">
+                    <div class="col-lg-6 col-md-8 col-sm-12">
+                        <div class="latest-content">
+                            <h3>News & insights</h3>
+                            <h1>Latest <br> Insights <br> & opinion </h1>
+                            <button class="report-btn report-btn-two"><a href="blog.html">View all news & insights <img
+                                    src="img/arow.svg">
                                 <div class="wave"></div>
-                            </button>
+                            </a></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-12 form-img">
+                        <div class="row p-b">
+                            <div class="col-lg-6 col-md-12 mt img1">
+                                <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 304 1.jpg"></a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt">
+                                <a href="blog-detail.html">
+                                    <div class="next-pag">
+                                        <h4>21st November 2022</h4>
+                                        <p>Bidding on competitor’s
+                                            <br> brands</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt img1">
+                                <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 305 1.jpg"></a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt">
+                                <a href="blog-detail.html">
+                                    <div class="next-pag">
+                                        <h4>11th November 2022</h4>
+                                        <p>World events & search
+                                            <br> behaviouus</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt img1">
+                                <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 306 1.jpg"></a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mt">
+                                <a href="blog-detail.html">
+                                    <div class="next-pag">
+                                        <h4>27th November 2022</h4>
+                                        <p>SEO quick wins &
+                                            <br> mistakes</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-content latest-content-two">
+                                <button class="report-btn report-btn-three"> View all NEWS & INSIGHTS <img
+                                                                                                        src="img/arow.svg">
+                                    <div class="wave"></div>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
     </section>
     <!-- End latest Section -->
     <!-- Start ACHIEVEMENTS -->

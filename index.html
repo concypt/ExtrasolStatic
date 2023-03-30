@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- extrasol-favicon -->
+    <link rel="icon" type="image/x-icon" href="img/extrasol-favicon.png">
     <!-- Swiper library -->
     <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet"/>
     <!-- jQuery library -->
@@ -15,10 +17,10 @@
     <!-- Include  library -->
     <link href="style/style.css" rel="stylesheet">
 </head>
-<body data-offset="1000" data-spy="scroll" data-target="#myScrollspy">
+<body data-offset="1000" data-spy="scroll" data-target="#myScrollspy" id="home-body">
 <div class="cursor"></div>
 <!-- Start Nav Bar-->
-<section class="nav-bg">
+<section class="nav-bg" id="extrasol-navbar">
     <div class="container-fluid wrap">
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="index.html"><img src="img/nav-logo .svg"></a>
@@ -122,26 +124,51 @@
 <!-- Start Company Logo-->
 <section class="trigger section gutter-horizontal bg-gray gutter-vertical--m gutter-horizontal company-logo">
     <div class="slider">
-        <div class="slide-track">
-            <div class="slide"><img alt="" height="150" src="img/microsoft.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Unilingo_logo_1_.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/bright.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Rectangle 309.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/master.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Rectangle.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/microsoft.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Unilingo_logo_1_.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/bright.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Rectangle 309.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/master.svg" width="150"/></div>
-            <div class="slide"><img alt="" height="150" src="img/Rectangle.svg" width="150"/></div>
+        <div class="slide-track service-track">
+            <div class="slide">
+                <img src="img/microsoft.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Unilingo_logo_1_.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/bright.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Rectangle 309.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/master.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Rectangle.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/microsoft.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Unilingo_logo_1_.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/bright.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Rectangle 309.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/master.svg" height="150" width="150" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/Rectangle.svg" height="150" width="150" alt="" />
+            </div>
         </div>
     </div>
+
 </section>
 <!-- End Company Logo-->
 <!-- Start Slider -->
 <section class="slider-sec">
-    <div class="container-fluid  wrap-two">
+    <div class="container-fluid wrap-two">
         <div class="slider-bg">
             <div class="slider-text">
             <h1>The one-stop shop for all your business needs</h1>
@@ -151,7 +178,7 @@
                 <div class="wave"></div>
             </a></button>
         </div>
-            <div class="slider-swiper">
+            <div class="slider-swiper" id="swiper-one">
                 <div class="swiper-btn">
                     <img class="swiper-button-new-next swiper-btns" id="right-white-service" src="img/right-btn.svg">
                     <img class="swiper-button-new-next swiper-btns" id="right-gray-service" src="img/right-btn-grey.svg">
@@ -358,7 +385,7 @@
                 <h1>We help business leaders build brands that grow and thrive.</h1>
                 <p>Our focused approach means that you get everything you need to grow your business.</p>
             </div>
-            <div class="swiper mySwiper-two swiper-two">
+            <div class="swiper mySwiper-two swiper-two" id="swiper-two">
                 <div class="swiper-wrapper slider-count">
                     <div class="swiper-slide"><img class="p-logo" src="img/Unilingo_logo_1_ (2).svg">
                         <div><img class="p-stars p-star-1" src="img/rating.svg"> <img class="p-stars" src="img/rating.svg"> <img
@@ -438,14 +465,16 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="portfolio-btn">
+                    <img class="swiper-button-next portfolio-next" id="right-white-btn" src="img/right_slider-arrow.svg">
+                    <img class="swiper-button-next portfolio-next" id="right-grey-btn" src="img/right-btn-grey.svg">
+                    <img class="swiper-button-prev portfolio-prev" id="left-grey-btn" src="img/left_arrow-btn.svg">
+                    <img class="swiper-button-prev portfolio-prev" id="left-white-btn" src="img/left-btn-white.svg">
+                </div>
+                
             </div>
 
-            <div class="portfolio-btn">
-                <img class="swiper-button-next portfolio-next" id="right-white-btn" src="img/right_slider-arrow.svg">
-                <img class="swiper-button-next portfolio-next" id="right-grey-btn" src="img/right-btn-grey.svg">
-                <img class="swiper-button-prev portfolio-prev" id="left-grey-btn" src="img/left_arrow-btn.svg">
-                <img class="swiper-button-prev portfolio-prev" id="left-white-btn" src="img/left-btn-white.svg">
-            </div>
             <div class="trusted">
                 <h2>Trusted By : </h2> <img alt="" src="img/microsoft-icon.svg" class="first-img"> <img alt="" src="img/Unilingo_logo_1_ (4).svg"> <img alt="" src="img/bright-logo.svg"></div>
         </div>
@@ -518,9 +547,6 @@
                     <div class="col-lg-6 col-md-12 mt img1">
                         <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 304 1.jpg"></a>
                     </div>
-                    <div class="col-lg-6 col-md-12 mt img2">
-                        <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 304.jpg"></a>
-                    </div>
                     <div class="col-lg-6 col-md-12 mt">
                         <a href="blog-detail.html">
                             <div class="next-pag">
@@ -532,9 +558,6 @@
                     </div>
                     <div class="col-lg-6 col-md-12 mt img1">
                         <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 305 1.jpg"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt img2">
-                        <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 305.jpg"></a>
                     </div>
                     <div class="col-lg-6 col-md-12 mt">
                         <a href="blog-detail.html">
@@ -548,10 +571,7 @@
                     <div class="col-lg-6 col-md-12 mt img1">
                         <a href="blog-detail.html"><img alt="" class="img-size-one" src="img/Rectangle 306 1.jpg"></a>
                     </div>
-                    <div class="col-lg-6 col-md-12 mt img2 content-hide">
-                        <a href="blog-detail.html"><img alt="" class="img-size-two" src="img/Rectangle 306.jpg"></a>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt content-hide">
+                    <div class="col-lg-6 col-md-12 mt">
                         <a href="blog-detail.html">
                             <div class="next-pag">
                                 <h4>27th November 2022</h4>
@@ -695,6 +715,5 @@
 
 <!-- End Footer -->
 <script src="js/javascript.js"></script>
-
 </body>
 </html>

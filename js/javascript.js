@@ -1,10 +1,16 @@
+const extrasol_navbar = document.getElementById("extrasol-navbar");
+
 // Start  Menu
 var menu = document.getElementById("menu");
-function closemenu() {
-    menu.style.right = "-250vh";
-}
 function openmenu() {
     menu.style.right = "0";
+    //DISABLE STICKY IF MENU Happened
+    extrasol_navbar.removeAttribute('id');
+}
+function closemenu() {
+    menu.style.right = "-250vh";
+    //ENABLE STICKY IF MENU CLOSED
+    extrasol_navbar.id = "extrasol-navbar";
 }
 // End  Menu
 // Start Lets Talk Hover
@@ -52,13 +58,14 @@ $('.portfolio-prev').on('click', function() {
 });
 
 
+
 var service_slider = $('.service-slider');
 var slideCountTotal = service_slider.find('.swiper-slide').length;
 
 var serviceIndex = 0;
 $('.swiper-button-new-next').on('click', function() {
     serviceIndex++;
-    console.log(slideCountTotal,serviceIndex)
+    //console.log(slideCountTotal,serviceIndex)
     if (serviceIndex >= slideCountTotal-3) {
         $('#right-gray-service').show();
         $('#right-white-service').hide();
@@ -80,148 +87,191 @@ $('.swiper-button-new-prev').on('click', function() {
         $('#left-white-service').hide();
     }
 });
-// Create a media query
-const mediaQuery = window.matchMedia('(min-width: 1600px)');
-if (mediaQuery.matches) {
-    const sr = ScrollReveal({
-        origin: 'top',
-        distance: '50px',
-        duration: 2000,
-        reset: false
-    });
-    sr.reveal(`.header-bg h1`, {
-        interval: 200,
-        origin: 'left'
-    })
-    sr.reveal(`.header-img`, {
-        interval: 200,
-        origin: 'right'
-    })
-    sr.reveal(`.slider-bg h1`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.slider-txt`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.slider-bg button`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.swiper-btn`, {
-        origin: 'right',
-        interval: 200
-    })
-    sr.reveal(`.img-text h1`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.img-text p`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.img-text img`, {
-        origin: 'right',
-        interval: 200
-    })
-    sr.reveal(`.p-text`, {
-        interval: 200
-    })
-    sr.reveal(`.trusted`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.trusted img`, {
-        origin: 'top',
-        interval: 200
-    })
-    sr.reveal(`.business-img`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.business-img img`, {
-        origin: 'top',
-        interval: 200
-    })
-    sr.reveal(`.report-form`, {
-        origin: 'left',
-        interval: 200
-    })
-    sr.reveal(`.report-img`, {
-        origin: 'right',
-        interval: 200
-    })
-    sr.reveal(`.p-b`, {
-        origin: 'right',
-        interval: 200
-    })
-    sr.reveal(`.mt`, {
-        origin: 'top',
-        interval: 200
-    })
-    sr.reveal(`.achieve-img`, {
-        origin: 'top',
-        interval: 200
-    })
-    sr.reveal(`.achieve-img p`, {
-        origin: 'left',
-        interval: 200
-    })
+
+//FOR ABOUT VIDEO 
+$(document).on('click','.js-videoPoster',function(e) {
+    e.preventDefault();
+    var poster = $(this);
+    var wrapper = poster.closest('.js-videoWrapper');
+    videoPlay(wrapper);
+});
+  
+function videoPlay(wrapper) {
+    var iframe = wrapper.find('.js-videoIframe');
+    var src = iframe.data('src');
+    wrapper.addClass('videoWrapperActive');
+    iframe.attr('src',src);
 }
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        420: {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-        },
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1280: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-        },
-        1380: {
+
+
+//do this if document is ready
+$(document).ready(function() {
+    //STICKY NAVBAR
+    var lastScrollTop; // This Varibale will store the top position
+    window.addEventListener('scroll',function(){
+    //on every scroll this funtion will be called
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    //This line will get the location on scroll
+    if(scrollTop > lastScrollTop){ //if it will be greater than the previous
+        $("#extrasol-navbar").css("top","-120px");
+    }
+    else {
+        $("#extrasol-navbar").css("top","0");
+    }
+    lastScrollTop = scrollTop; //New Position Stored
+    });
+
+
+    // put your page initialization code here
+    if (document.getElementById("home-body")) {
+        // Create a media query
+        const mediaQuery = window.matchMedia('(min-width: 1600px)');
+        if (mediaQuery.matches) {
+            const sr = ScrollReveal({
+                origin: 'top',
+                distance: '50px',
+                duration: 2000,
+                reset: false
+            });
+            sr.reveal(`.header-bg h1`, {
+                interval: 200,
+                origin: 'left'
+            })
+            sr.reveal(`.header-img`, {
+                interval: 200,
+                origin: 'right'
+            })
+            sr.reveal(`.slider-bg h1`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.slider-txt`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.slider-bg button`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.swiper-btn`, {
+                origin: 'right',
+                interval: 200
+            })
+            sr.reveal(`.img-text h1`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.img-text p`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.img-text img`, {
+                origin: 'right',
+                interval: 200
+            })
+            sr.reveal(`.p-text`, {
+                interval: 200
+            })
+            sr.reveal(`.trusted`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.trusted img`, {
+                origin: 'top',
+                interval: 200
+            })
+            sr.reveal(`.business-img`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.business-img img`, {
+                origin: 'top',
+                interval: 200
+            })
+            sr.reveal(`.report-form`, {
+                origin: 'left',
+                interval: 200
+            })
+            sr.reveal(`.report-img`, {
+                origin: 'right',
+                interval: 200
+            })
+            sr.reveal(`.p-b`, {
+                origin: 'right',
+                interval: 200
+            })
+            sr.reveal(`.mt`, {
+                origin: 'top',
+                interval: 200
+            })
+            sr.reveal(`.achieve-img`, {
+                origin: 'top',
+                interval: 200
+            })
+            sr.reveal(`.achieve-img p`, {
+                origin: 'left',
+                interval: 200
+            })
+        }
+    }
+
+    if (document.getElementById("swiper-one")) {
+        var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3.5,
-            spaceBetween: 20,
-        },
-        1700: {
-            slidesPerView: 4.5,
-            spaceBetween: 50,
-        },
-    },
-    navigation: {
-        nextEl: ".swiper-button-new-next",
-        prevEl: ".swiper-button-new-prev",
-    },
-});
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                220: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                420: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1380: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                },
+                1700: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 50,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-new-next",
+                prevEl: ".swiper-button-new-prev",
+            },
+        });
+    }
 
-var swiper = new Swiper(".mySwiper-two", {
-    spaceBetween: 30,
-    grabCursor: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    if (document.getElementById("swiper-two")) {
+        var swiper = new Swiper(".mySwiper-two", {
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
 });
-
