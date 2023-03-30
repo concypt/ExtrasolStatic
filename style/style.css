@@ -23,6 +23,10 @@
     color: #000;
   }
 
+  textarea::placeholder {
+    color: #000;
+  }
+
   input:focus,
   select:focus,
   select,
@@ -56,7 +60,11 @@
     width: 100%;
     max-width: 1470px;
   }
-  
+
+  a:hover {
+    text-decoration: none;
+  }
+
   .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
     opacity: 1.35;
     cursor: auto;
@@ -1371,7 +1379,7 @@
     max-width: 365px;
     border-radius: 20px;
   }
-  
+
   .form-img .img-size-one {
     width: 100%;
     max-width: 100%;
@@ -1379,7 +1387,7 @@
     height: 206px;
     object-fit: cover;
   }
-  
+
   .img-text .lapi {
     margin-top: 106px;
     width: 100%;
@@ -2492,8 +2500,7 @@
     padding: 0;
   }
   
-  .blog-main {
-    background-image: url(../img/blog-main.jpg);
+  .blog-main img{
     border-radius: 50px 0px 0px 50px;
     width: 100%;
     max-width: 846px;
@@ -2537,19 +2544,7 @@
     max-width: 586px;
   }
   
-  .card-1 img{
-    height: 423px;
-    border-radius: 50px 50px 0px 0px;
-    width: 100%;
-  }
-  
-  .card-2 img{
-    height: 423px;
-    border-radius: 50px 50px 0px 0px;
-    width: 100%;
-  }
-  
-  .card-3 img{
+  .card-1 img, .card-2 img, .card-3 img{
     height: 423px;
     border-radius: 50px 50px 0px 0px;
     width: 100%;
@@ -2633,7 +2628,7 @@
     background: #19164C;
     border-radius: 0px 0px 0px 50px;
   }
-  
+
   .card-hover:hover h5 {
     color: #FDBC3B;
   }
@@ -2651,12 +2646,7 @@
     color: #fff;
   }
   
-  .two-cards .card-1 img{
-    height: 600px;
-    width: 100%;
-  }
-  
-  .two-cards .card-2 img{
+  .two-cards .card-1 img, .two-cards .card-2 img {
     height: 600px;
     width: 100%;
   }
@@ -3216,13 +3206,15 @@
   .work-card {
     margin-top: 60px;
   }
-  
+
   .work-card img {
     width: 100%;
     max-width: 734px;
     border-radius: 50px;
+    object-fit: cover;
+    transition: 0.5s;
   }
-  
+
   .work-card h1 {
     font-weight: 600;
     font-size: 25px;
@@ -5050,6 +5042,12 @@
       max-width: 556px;
       margin: 0 auto;
     }
+
+    .two-cards .card-1 img, .two-cards .card-2 img {
+      height: 451px;
+      width: 100%;
+    }
+
     .nav-tabs {
       border-bottom: none;
       display: flex;
@@ -5135,10 +5133,10 @@
       flex-direction: column;
     }
   
-    .blog-main {
+    .blog-main img{
       border-radius: 50px 50px 0px 0px;
-      max-width: 684px;
-      height: 400px;
+      max-width: 100%;
+      height: 444px;
     }
   
     .blog-main-txt p {
@@ -5742,7 +5740,11 @@
       padding-top: 26px;
       padding-left: 30px;
     }
-  
+
+    .blog-main img {
+      max-width: 100%;
+    }
+
     .blog-main-txt h1 {
       font-size: 25px;
       line-height: 32px;
@@ -6401,6 +6403,10 @@
 
     button.card-report-btn2 {
       margin-top: 40px;
+    }
+
+    .blog-main img {
+      height: 320px;
     }
 
     .card-report {
