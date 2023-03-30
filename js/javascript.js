@@ -1,10 +1,16 @@
+const extrasol_navbar = document.getElementById("extrasol-navbar");
+
 // Start  Menu
 var menu = document.getElementById("menu");
-function closemenu() {
-    menu.style.right = "-250vh";
-}
 function openmenu() {
     menu.style.right = "0";
+    //DISABLE STICKY IF MENU Happened
+    extrasol_navbar.removeAttribute('id');
+}
+function closemenu() {
+    menu.style.right = "-250vh";
+    //ENABLE STICKY IF MENU CLOSED
+    extrasol_navbar.id = "extrasol-navbar";
 }
 // End  Menu
 // Start Lets Talk Hover
@@ -81,6 +87,22 @@ $('.swiper-button-new-prev').on('click', function() {
         $('#left-white-service').hide();
     }
 });
+
+//FOR ABOUT VIDEO 
+$(document).on('click','.js-videoPoster',function(e) {
+    e.preventDefault();
+    var poster = $(this);
+    var wrapper = poster.closest('.js-videoWrapper');
+    videoPlay(wrapper);
+});
+  
+function videoPlay(wrapper) {
+    var iframe = wrapper.find('.js-videoIframe');
+    var src = iframe.data('src');
+    wrapper.addClass('videoWrapperActive');
+    iframe.attr('src',src);
+}
+
 
 //do this if document is ready
 $(document).ready(function() {
@@ -192,14 +214,12 @@ $(document).ready(function() {
             })
         }
     }
-    else {}
 
-    var swiper_one = $(".mySwiper");
-
-    if(swiper_one) {
+    if (document.getElementById("swiper-one")) {
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3.5,
             spaceBetween: 30,
+            centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -245,9 +265,7 @@ $(document).ready(function() {
         });
     }
 
-    var swiper_two = $(".mySwiper-two");
-    if(swiper_two) {
-
+    if (document.getElementById("swiper-two")) {
         var swiper = new Swiper(".mySwiper-two", {
             spaceBetween: 30,
             grabCursor: true,

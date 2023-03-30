@@ -2633,7 +2633,11 @@
     background: #19164C;
     border-radius: 0px 0px 0px 50px;
   }
-  
+
+  .card-hover img {
+    object-fit: cover;
+  }
+
   .card-hover:hover h5 {
     color: #FDBC3B;
   }
@@ -4027,6 +4031,12 @@
     opacity: 0;
     transition: 0.5s;
   }
+
+  @media (max-width: 1899px) {
+    .phone {
+      display: none;
+    }
+  }
   
   @media (max-width:1600px) {
     .map-content {
@@ -4109,11 +4119,10 @@
     .cards {
       margin: 0%;
     }
-  
     .phone {
       display: none;
     }
-  
+
     li.nav-item.active {
       margin-left: 0px;
     }
